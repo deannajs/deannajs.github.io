@@ -4,16 +4,27 @@
 <head>
     <title>Deanna (๑꒪▿꒪)*</title>
     <link rel="stylesheet" type="text/css" href="/main.css">
+    <link type="text/javascript" src="/deanna.js">
 </head>
     <div class="banner">~hello~</div>
-    <div class="about">
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="gotoTab(event, 'about')">about</button>
+        <button class="tablinks" onclick="gotoTab(event, 'projects and experience')">projects and experience</button>
+        <button class="tablinks" onclick="gotoTab(event, 'classe and extracurriculars')">classes and extracurriculars</button>
+        <button class="tablinks" onclick="gotoTab(event, 'photography')">photography</button>
+        <button class="tablinks" onclick="gotoTab(event, 'contact')">contact</button>
+    </div>
+
+    <div id="about" class="tabcontent">
         hi! my name is deanna and i'm a computer science major at the university of michigan (b.s.e. expected may 2020).
         i am interested in full-time software engineer roles after graduation.
         i also play cello in the michigan pops orchestra and carillon (i.e. the bells!) in burton and lurie towers on campus.
         my favorite animal is pigs ᕕ〳 ் (oo) ் 〵╯
     </div>
 
-    <div class="projects and experience">
+    <div id="projects and experience" class="tabcontent">
         projects:
         ¯\_(ツ)_/¯
         
@@ -28,7 +39,7 @@
 
     </div>
 
-    <div class="classes and extracurriculars">
+    <div id="classes and extracurriculars" class="tabcontent">
         major classes:
         eecs 280 - Programming and Introductory Data Structures
         eecs 281 - Data Structures and Algorithms
@@ -55,12 +66,12 @@
         carillon guild
     </div>
 
-    <div class="photography">
+    <div id="photography" class="tabcontent">
         I inherited my sister's old dslr. I don't actually know how to use the fancy camera settings; I just like playing around with it.
         I mostly take pictures of people!
     </div>
 
-    <div class="contact">
+    <div id="contact" class="tabcontent">
         You can contact me at deannajs@umich.edu.
         Alternatively, fill out this form right here (not here yet 0_0) to send me an email.
     </div>
