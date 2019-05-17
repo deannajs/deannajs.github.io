@@ -1,4 +1,8 @@
-.text{
+.title{
     float: center;
-    margin: 100px;
+}
+.text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
