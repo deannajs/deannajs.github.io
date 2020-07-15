@@ -2,7 +2,7 @@ function openTab(event, tabname) {
   // var i, tabcontent, tablinks;
   var tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].innerHTML = "";
+    tabcontent[i].innerText = "";
   }
   // tablinks = document.getElementsByClassName("tablinks");
   // for (i = 0; i < tablinks.length; i++) {
