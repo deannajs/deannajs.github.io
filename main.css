@@ -8,7 +8,9 @@
     text-decoration: blink;
     
 }
-.para{
+p{
+    font-family: Verdana;
+    font-size: 10px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
