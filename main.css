@@ -10,14 +10,9 @@
 }
 p{
     font-family: Verdana;
-    font-size: 10px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.tab{
-    text-align: center;
+    font-size: 15px;
+    padding: 50px;
+    margin-left: 500px;
 }
 
 .profilepic {
