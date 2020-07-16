@@ -21,6 +21,7 @@ a:hover {
 nav {
     font-family: Verdana;
     text-align: center;
+    position: fixed;
 }
 
 p{
@@ -29,10 +30,13 @@ p{
     padding: 50px;
     margin-left: 500px;
     margin-right: 50px;
+    position: relative;
+    top: -100px;
 }
 
 .profilepic {
     height: 350px;
     width: 230px;
     margin-left: 100px;
+    margin-top: 20px;
 }
