@@ -16,7 +16,7 @@ a {
 
 nav {
     font-family: Verdana;
-
+    text-align: center;
 }
 
 p{
@@ -28,6 +28,6 @@ p{
 
 .profilepic {
     height: 350px;
-    width: 210px;
+    width: 300px;
     padding: 50px;
 }
