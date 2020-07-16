@@ -6,7 +6,8 @@
     margin-bottom: 50px;
     font-family: "Lucida Console", monospace;
     text-decoration: blink;
-    
+    background-color: bisque;
+    position: fixed;
 }
 
 a {
