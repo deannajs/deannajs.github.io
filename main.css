@@ -8,6 +8,17 @@
     text-decoration: blink;
     
 }
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+nav {
+    font-family: Verdana;
+
+}
+
 p{
     font-family: Verdana;
     font-size: 15px;
@@ -18,4 +29,5 @@ p{
 .profilepic {
     height: 350px;
     width: 210px;
+    padding: 50px;
 }
