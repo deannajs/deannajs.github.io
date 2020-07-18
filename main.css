@@ -48,3 +48,9 @@ p{
     margin-top: 13%;
     border-radius: 15px;
 }
+
+.title {
+    text-orientation: upright;
+    font-size: 150%;
+    font-family: Verdana;
+}
