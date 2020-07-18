@@ -33,10 +33,10 @@ nav {
 
 p{
     font-family: Verdana;
-    font-size: 15px;
+    font-size: 15%;
     padding: 50px;
-    margin-left: 500px;
-    margin-right: 50px;
+    margin-left: 40%;
+    margin-right: 10%;
     position: relative;
     top: -400px;
 }
