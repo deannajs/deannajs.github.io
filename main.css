@@ -42,8 +42,8 @@ p{
 }
 
 .profilepic {
-    height: 480px;
-    width: 320px;
+    height: 60%;
+    width: 40%;
     margin-left: 100px;
     margin-top: 20px;
     border-radius: 15px;
