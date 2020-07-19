@@ -10,10 +10,6 @@
     position: fixed;
 }
 
-body {
-    margin-top: 10%;
-}
-
 a {
     text-decoration: none;
     color: grey;
@@ -27,8 +23,7 @@ nav {
     font-family: Verdana;
     justify-content: space-between;
     position: fixed;
-    left: 50%;
-    top: 5%;
+    margin-left: 50%;
 }
 
 .bar {
