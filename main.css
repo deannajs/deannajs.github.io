@@ -52,5 +52,6 @@ p{
     text-orientation: upright;
     font-size: 150%;
     font-family: Verdana;
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
