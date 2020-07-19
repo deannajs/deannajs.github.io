@@ -1,9 +1,8 @@
 .banner{
     text-align: center;
-    letter-spacing: 10px;
-    font-size: 36px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    letter-spacing: 2%;
+    font-size: 200%;
+    margin-top: 3%;
     font-family: "Lucida Console", monospace;
     text-decoration: blink;
     background-color: bisque;
@@ -33,8 +32,8 @@ nav {
 
 p{
     font-family: Verdana;
-    font-size: 100%;
-    padding: 50px;
+    font-size: 150%;
+    padding: 10%;
     margin-left: 30%;
     margin-right: 5%;
     margin-top: 5%;
@@ -48,7 +47,7 @@ p{
     border-radius: 15px;
 }
 
-.title {
+.sec_header {
     text-orientation: upright;
     font-size: 150%;
     font-family: Verdana;
