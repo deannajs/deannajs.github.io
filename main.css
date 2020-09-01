@@ -55,7 +55,7 @@ p{
 .profilepic {
     height: 30%;
     width: 20%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     /* margin-top: 13%; */
     border-radius: 15px;
     float: left;
