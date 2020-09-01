@@ -51,16 +51,14 @@ p{
 .profilepic {
     height: 30%;
     width: 20%;
-    /* margin-left: 5%; */
-    /* margin-top: 13%; */
+    margin-left: 5%;
+    margin-top: 13%;
     border-radius: 15px;
     float: left;
 }
 
-.sec_header {
-    text-orientation: upright;
+.section_header {
     font-size: 150%;
-    font-family: Verdana;
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    font-family: Oswald;
+    color: ivory;
 }
