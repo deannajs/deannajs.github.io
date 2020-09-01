@@ -9,7 +9,7 @@
 }
 
 body {
-    background: -webkit-linear-gradient(top, bisque , pink , powderblue , plum, darkseagreen, sandybrown);
+    background: -webkit-linear-gradient(top, bisque 100%, pink 200%, powderblue 300%, plum 400%, darkseagreen 500%, sandybrown 600%);
 }
 
 a {
