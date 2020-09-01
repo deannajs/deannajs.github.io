@@ -64,6 +64,7 @@ p{
     width: 20%;
     padding: 5%;
     margin-top: 13%;
-    /* float: left; */
+    float: left;
+    margin-left: -50%;
 }
 
