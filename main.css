@@ -1,3 +1,12 @@
+
+
+/* background colors */
+body {
+    background: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
+}
+
+
+/* name banner */
 .banner{
     text-align: center;
     letter-spacing: 2%;
@@ -5,13 +14,9 @@
     font-family: "Oswald";
     /* position: fixed; */
 }
-
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
-body {
-    background: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
-}
 
 /* navigation bar */
 nav {
@@ -28,11 +33,6 @@ a {
 
 a:hover {
     color: darkgrey;
-}
-
-.bar {
-    background-size: 100% 100%;
-    background-color: bisque;
 }
 
 /* text & images */ 
