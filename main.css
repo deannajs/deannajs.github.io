@@ -1,11 +1,18 @@
 .banner{
     text-align: center;
     letter-spacing: 2%;
-    font-size: 200%;
     margin-top: 3%;
     font-family: "Oswald";
     /* text-decoration: blink; */
     /* position: fixed; */
+}
+
+.name {
+    font-size: 1000%;
+}
+
+.subname {
+    font-size: 200%;
 }
 
 body {
