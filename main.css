@@ -41,7 +41,7 @@ p{
     font-family: Verdana;
     font-size: 110%;
     padding: 5%;
-    margin-top: 20%;
+    /* margin-top: 20%; */
 }
 
 .section_header {
@@ -54,16 +54,16 @@ p{
     height: 30%;
     width: 20%;
     padding: 5%;
-    margin-top: 13%;
+    /* margin-top: 13%; */
     border-radius: 85px;
     float: left;
 }
 
-.workpic {
+/* .workpic {
     height: 30%;
     width: 20%;
     padding: 5%;
     margin-top: 13%;
     float: left;
-}
+} */
 
