@@ -6,16 +6,19 @@
     /* position: fixed; */
 }
 
-.name {
-    font-size: 1000%;
-}
-
-.subname {
-    font-size: 200%;
-}
+#name { font-size: 1000%;}
+#subname { font-size: 200%;}
 
 body {
     background: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
+}
+
+/* navigation bar */
+nav {
+    font-family: Verdana;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 50%;
 }
 
 a {
@@ -27,16 +30,17 @@ a:hover {
     color: darkgrey;
 }
 
-nav {
-    font-family: Verdana;
-    justify-content: space-between;
-    position: fixed;
-    margin-left: 50%;
-}
-
 .bar {
     background-size: 100% 100%;
     background-color: bisque;
+}
+
+/* text */ 
+
+.section_header {
+    font-size: 150%;
+    font-family: Oswald;
+    color: ivory;
 }
 
 p{
@@ -57,8 +61,3 @@ p{
     float: left;
 }
 
-.section_header {
-    font-size: 150%;
-    font-family: Oswald;
-    color: ivory;
-}
