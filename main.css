@@ -5,12 +5,14 @@
     margin-top: 3%;
     font-family: "Lucida Console", monospace;
     text-decoration: blink;
-    background-color: bisque;
     position: fixed;
 }
 
 body {
-    background: -webkit-linear-gradient(top, bisque 16%, pink 16%, powderblue 16%, plum, darkseagreen, sandybrown);
+    /* background: -webkit-linear-gradient(top, bisque 16%, pink 16%, powderblue 16%, plum, darkseagreen, sandybrown); */
+    background: -webkit-linear-gradient(top, bisque);
+    background: -webkit-linear-gradient(top, pink);
+
 }
 
 a {
