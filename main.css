@@ -50,6 +50,10 @@ p{
     color: ivory;
 }
 
+.side_images {
+    float: left;
+}
+
 .profilepic {
     height: 30%;
     width: 20%;
@@ -57,7 +61,6 @@ p{
     margin-top: 13%;
     border-radius: 85px;
     /* float: left; */
-    display: inline-block;
 }
 
 .workpic {
@@ -66,7 +69,5 @@ p{
     padding: 5%;
     margin-top: 13%;
     /* float: left; */
-    display: inline-block;
-    /* margin-left: -30%; */
 }
 
