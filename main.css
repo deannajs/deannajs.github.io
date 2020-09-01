@@ -48,12 +48,13 @@ p{
     margin-top: 5%;
 }
 
-.profilepic {
+#profilepic {
     height: 30%;
     width: 20%;
-    margin-left: 5%;
-    margin-top: 13%;
+    /* margin-left: 5%; */
+    /* margin-top: 13%; */
     border-radius: 15px;
+    float: left;
 }
 
 .sec_header {
