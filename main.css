@@ -7,11 +7,11 @@
     /* position: fixed; */
 }
 
-.name {
+.banner.name {
     font-size: 1000%;
 }
 
-.subname {
+.banner.subname {
     font-size: 200%;
 }
 
