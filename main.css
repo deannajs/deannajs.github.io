@@ -53,8 +53,8 @@ p{
 .profilepic {
     height: 30%;
     width: 20%;
-    /* padding: 5%; */
-    /* margin-top: 13%; */
+    padding: 5%;
+    margin-top: 13%;
     border-radius: 85px;
     float: left;
 }
@@ -65,6 +65,6 @@ p{
     /* width: 10%; */
     padding: 5%;
     margin-top: 13%;
-    /* float: left; */
+    float: left;
 }
 
