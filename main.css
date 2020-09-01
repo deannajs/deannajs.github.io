@@ -9,6 +9,10 @@
     position: fixed;
 }
 
+body {
+    background: -webkit-linear-gradient(top, bisque, pink, powderblue, plum, darkseagreen, sandybrown);
+}
+
 a {
     text-decoration: none;
     color: grey;
