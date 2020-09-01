@@ -6,11 +6,11 @@
     /* position: fixed; */
 }
 
-#name {
+.name {
     font-size: 1000%;
 }
 
-#subname {
+.subname {
     font-size: 200%;
 }
 
