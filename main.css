@@ -51,14 +51,14 @@ p{
 }
 
 .side_images {
-    float: left;
-    padding: 5%;
+    /* float: left; */
+    display: inline-block;
 }
 
 .profilepic {
     height: 30%;
     width: 20%;
-    /* padding: 5%; */
+    padding: 5%;
     margin-top: 13%;
     border-radius: 85px;
     /* float: left; */
