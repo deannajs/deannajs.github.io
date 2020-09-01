@@ -3,9 +3,9 @@
     letter-spacing: 2%;
     font-size: 200%;
     margin-top: 3%;
-    font-family: "Lucida Console", monospace;
-    text-decoration: blink;
-    position: fixed;
+    font-family: "Oswald";
+    /* text-decoration: blink; */
+    /* position: fixed; */
 }
 
 body {
