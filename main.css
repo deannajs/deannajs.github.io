@@ -67,6 +67,6 @@ p{
     width: 20%;
     padding: 5%;
     margin-top: 13%;
-    /* align: left; */
+    align-content: left;
 }
 
