@@ -59,7 +59,7 @@ p{
     margin-top: 13%;
     border-radius: 85px;
     display: block;
-    align-content: left;
+    text-align: left;
 }
 
 .workpic {
@@ -67,6 +67,6 @@ p{
     width: 20%;
     padding: 5%;
     margin-top: 13%;
-    align-content: left;
+    text-align: left;
 }
 
