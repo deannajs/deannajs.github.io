@@ -28,7 +28,8 @@ body {
     content: '╲╱';
     color: black;
     animation: bounce 1s ease infinite;
-    /* position: absolute; */
+    position: absolute;
+    left: 50%;
 
     /* font-size: 2rem; */
     height: 4rem;
