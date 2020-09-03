@@ -1,10 +1,14 @@
 <?php
+  $name = $_POST['name'];
+  $visitor_email = $_POST['email'];
+  $message = $_POST['message'];
 
-echo "HELLO";
 
-if(isset($_POST['submit'])){
-    echo "YOU SUBMITTED A FORM GOOD JOB";
-}
+  // echo "HELLO";
+
+// if(isset($_POST['submit'])){
+//     echo "YOU SUBMITTED A FORM GOOD JOB";
+// }
 // $to      = 'deannajs@umich.edu';
 // $subject = 'from user on deannajs.github.io';
 // $message = 'hello';
@@ -24,4 +28,6 @@ if(isset($_POST['submit'])){
 //     'X-Mailer: PHP/' . phpversion();
 
 // mail($to, $subject, $message, $headers);
-?> 
+
+?>
+
