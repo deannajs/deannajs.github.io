@@ -34,7 +34,8 @@ body {
     position: absolute;
     text-align: center;
     font-size: 2rem;
-    height: 8rem;
+    /* height: 8rem; */
+    padding: 5%;
     /* line-height: 4rem; */
   }
   
