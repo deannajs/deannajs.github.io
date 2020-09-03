@@ -20,7 +20,8 @@ body {
 .arrow {
     font-family: Oswald;
     opacity: 0.8;
-    text-align: center;
+    /* text-align: center; */
+    left: 50%;
 }
 
 .arrow::before {
