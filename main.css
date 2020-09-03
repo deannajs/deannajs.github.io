@@ -37,13 +37,19 @@ body {
     /* center the element */
     left: 50%;
     margin-left: -2rem;
-  }
+}
   
-  @keyframes bounce {
+@keyframes bounce {
     50% {
-      transform: translateY(-50%);
+        transform: translateY(-50%);
     }
-  }
+}
+
+
+button {
+    background: transparent;
+    border: none;
+}
 /* navigation bar */
 nav {
     font-family: Verdana;
