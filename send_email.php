@@ -1,5 +1,10 @@
 <?php
+
 echo "HELLO";
+
+if(isset($_POST['submit'])){
+    echo "YOU SUBMITTED A FORM GOOD JOB";
+}
 // $to      = 'deannajs@umich.edu';
 // $subject = 'from user on deannajs.github.io';
 // $message = 'hello';
