@@ -32,7 +32,7 @@ body {
     animation: bounce 2s ease infinite;
     position: absolute;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     margin-top: -2rem;
 
     /* center the element */
