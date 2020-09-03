@@ -28,16 +28,11 @@ body {
     content: '╲╱';
     color: black;
     animation: bounce 1s ease infinite;
-    /* left: 50%; */
+    position: static;
 
-    /* bottom: 2rem; */
     /* font-size: 2rem; */
     /* height: 4rem; */
     /* line-height: 4rem; */
-    /* margin-left: -3rem; */
-    position: absolute;
-    /* text-align: center; */
-    /* width: 6rem; */
   }
   
   @keyframes bounce {
