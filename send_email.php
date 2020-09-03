@@ -4,6 +4,8 @@ $subject = 'from user on deannajs.github.io';
 $message = 'hello';
 
 echo $name;
+echo $email;
+echo $message;
 
 
 // $headers = 'From: webmaster@example.com' . "\r\n" .
