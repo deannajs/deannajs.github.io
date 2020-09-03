@@ -22,7 +22,7 @@ body {
     font-family: Oswald;
     opacity: 0.8;
     text-align: center;
-    padding: 10%;
+    padding: 5%;
 }
 
 .arrow::before {
@@ -31,7 +31,7 @@ body {
     animation: bounce 2s ease infinite;
     position: absolute;
     font-size: 2rem;
-    
+    padding: 5%;
     /* center the element */
     left: 50%;
     margin-left: -2rem;
