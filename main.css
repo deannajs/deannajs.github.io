@@ -33,6 +33,8 @@ body {
     position: absolute;
     font-size: 2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
+
     /* center the element */
     left: 50%;
     margin-left: -2rem;
