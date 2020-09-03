@@ -24,7 +24,7 @@ body {
 }
 
 .arrow::before {
-    content: '╲╱';
+    /* content: '╲╱'; */
     color: black;
     animation: bounce 1s ease infinite;
     /* left: 50%; */
