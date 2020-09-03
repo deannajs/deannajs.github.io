@@ -31,7 +31,6 @@ body {
     animation: bounce 2s ease infinite;
     position: absolute;
     font-size: 2rem;
-    padding: 5%;
     margin-bottom: 2rem;
     /* center the element */
     left: 50%;
