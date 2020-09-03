@@ -3,9 +3,13 @@ $to      = 'deannajs@umich.edu';
 $subject = 'from user on deannajs.github.io';
 $message = 'hello';
 
-echo $name;
-echo $email;
+echo $to;
+echo $subject;
 echo $message;
+// echo $name;
+// echo $email;
+// echo $message;
+
 
 
 // $headers = 'From: webmaster@example.com' . "\r\n" .
