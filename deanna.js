@@ -1,5 +1,8 @@
-document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
+window.onload = function(){
+  document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
 
-function scrollToAboutMe() {
-  document.getElementById("about me").scrollIntoView();
+  function scrollToAboutMe() {
+    console.log("hellooooo");
+    document.getElementById("about me").scrollIntoView();
+  }
 }
