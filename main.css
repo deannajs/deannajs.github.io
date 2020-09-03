@@ -47,9 +47,10 @@ body {
 
 
 button {
-    background: transparent;
-    border: none;
+    visibility: hidden;
+    text-align: center;
 }
+
 /* navigation bar */
 nav {
     font-family: Verdana;
