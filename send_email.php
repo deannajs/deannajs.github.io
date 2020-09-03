@@ -6,6 +6,11 @@ $message = 'hello';
 echo $to;
 echo $subject;
 echo $message;
+
+var_dump($_POST);
+echo $_POST["name"];
+echo $_POST["email"];
+echo $_POST["message"];
 // echo $name;
 // echo $email;
 // echo $message;
