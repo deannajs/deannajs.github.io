@@ -32,7 +32,6 @@ body {
     animation: bounce 2s ease infinite;
     position: absolute;
     font-size: 2rem;
-    /* margin-bottom: 2rem; */
     margin-top: -2rem;
 
     /* center the element */
@@ -65,7 +64,7 @@ a:hover {
 /* text & images */ 
 
 p{
-    font-family: Verdana;
+    font-family: Roboto Slab;
     font-size: 110%;
     padding: 5%;
     margin-top: 13%;
