@@ -36,7 +36,7 @@ body {
 
     /* center the element */
     left: 50%;
-    margin-left: -3rem;
+    margin-left: -2rem;
   }
   
   @keyframes bounce {
