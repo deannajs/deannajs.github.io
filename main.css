@@ -33,7 +33,7 @@ body {
     animation: bounce 1s ease infinite;
     position: absolute;
     text-align: center;
-    /* font-size: 2rem; */
+    font-size: 2rem;
     height: 8rem;
     /* line-height: 4rem; */
   }
