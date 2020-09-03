@@ -47,8 +47,7 @@ body {
 
 .scroll_button {
     background: transparent;
-    /* border: none; */
-    height: 150%;
+    border: none;
     /* outline: none; */
     text-align: center;
 }
