@@ -30,13 +30,9 @@ body {
 .arrow::before {
     content: '╲╱';
     color: black;
-    animation: bounce 1s ease infinite;
+    animation: bounce 2s ease infinite;
     position: absolute;
-    text-align: center;
     font-size: 2rem;
-    /* height: 8rem; */
-    padding: 5%;
-    /* line-height: 4rem; */
   }
   
   @keyframes bounce {
