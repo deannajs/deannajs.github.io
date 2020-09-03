@@ -3,9 +3,7 @@
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
-    background: linear-gradient(#000, #000) no-repeat center/2px 100%;
-
-
+    /* background: linear-gradient(#000, #000) no-repeat center/2px 100%; */
 }
 
 
@@ -33,7 +31,7 @@ body {
     animation: bounce 2s ease infinite;
     position: absolute;
     font-size: 2rem;
-
+    
     /* center the element */
     left: 50%;
     margin-left: -2rem;
