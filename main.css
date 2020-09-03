@@ -48,8 +48,9 @@ body {
 
 button {
     background: transparent;
-    border: none;
-    outline: none;
+    /* border: none; */
+    height: 150%;
+    /* outline: none; */
     text-align: center;
 }
 
