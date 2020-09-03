@@ -27,7 +27,6 @@ body {
     content: '╲╱';
     color: black;
     animation: bounce 1s ease infinite;
-    text-align: center;
     /* left: 50%; */
 
     /* bottom: 2rem; */
