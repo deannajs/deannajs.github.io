@@ -1,20 +1,17 @@
 <?php
-$to      = 'deannajs@umich.edu';
-$subject = 'from user on deannajs.github.io';
-$message = 'hello';
+echo "HELLO";
+// $to      = 'deannajs@umich.edu';
+// $subject = 'from user on deannajs.github.io';
+// $message = 'hello';
 
-echo $to;
-echo $subject;
-echo $message;
-
-var_dump($_POST);
-echo $_POST["name"];
-echo $_POST["email"];
-echo $_POST["message"];
-// echo $name;
-// echo $email;
+// echo $to;
+// echo $subject;
 // echo $message;
 
+// var_dump($_POST);
+// echo $_POST["name"];
+// echo $_POST["email"];
+// echo $_POST["message"];
 
 
 // $headers = 'From: webmaster@example.com' . "\r\n" .
