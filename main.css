@@ -22,13 +22,14 @@ body {
     opacity: 0.8;
     text-align: center;
     padding: 5%;
+    position: static;
 }
 
 .arrow::before {
     content: '╲╱';
     color: black;
     animation: bounce 1s ease infinite;
-    position: relative;
+    position: absolute;
 
     /* font-size: 2rem; */
     /* height: 4rem; */
