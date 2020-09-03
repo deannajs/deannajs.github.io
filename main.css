@@ -22,7 +22,7 @@ body {
     opacity: 0.8;
     text-align: center;
     padding: 5%;
-    position: static;
+    position: relative;
 }
 
 .arrow::before {
