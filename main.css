@@ -52,24 +52,18 @@ nav {
     font-family: "Oswald";
     justify-content: space-between;
     position: fixed;
-    text-justify: center;
-
+    background-color: bisque;
     /* center the element */
     left: 50%;
 }
 
-.nav li {
-    display: inline-block;
-    font-size: 90%;
-    padding: 10%;
-}
-
-a {
+.nav a {
+    text-align: center;
     text-decoration: none;
     color: grey;
 }
 
-a:hover {
+.nav a:hover {
     color: darkgrey;
 }
 
