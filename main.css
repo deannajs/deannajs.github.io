@@ -27,7 +27,7 @@ body {
 
 #scroll_button {
     background: transparent;
-    border: none;
+    /* border: none; */
     outline: none;
     width: 5%;
 }
@@ -70,7 +70,7 @@ nav {
     
     /* center the element */
     left: 50%;
-    margin-left: -13rem;
+    margin-left: -14rem;
 }
 
 nav a {
