@@ -17,7 +17,7 @@ body {
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
-.scroll_down {
+#scroll_down {
     font-family: Oswald;
     text-align: center;
     margin-top: 7rem;
