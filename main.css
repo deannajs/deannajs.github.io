@@ -17,6 +17,7 @@ body {
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
+/* scroll down arrow */
 #scroll_down {
     font-family: "Oswald";
     margin-top: 9rem;
@@ -25,7 +26,7 @@ body {
 
 #arrow {
     color: black;
-    animation: bounce 2s ease infinite;
+    animation: bounce 3s ease infinite;
     position: absolute;
     font-size: 2rem;
 
