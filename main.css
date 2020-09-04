@@ -13,20 +13,20 @@ body {
     letter-spacing: 2%;
     margin-top: 13%;
     font-family: "Oswald";
-    /* position: fixed; */
 }
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
-.arrow {
+.arrow_text {
     font-family: Oswald;
     text-align: center;
     /* padding: 5%; */
     margin-top: 7rem;
 }
 
-.arrow::before {
-    content: '╲╱';
+/* .arrow::before { */
+#arrow {
+    /* content: '╲╱'; */
     color: black;
     animation: bounce 2s ease infinite;
     position: absolute;
