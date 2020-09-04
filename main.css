@@ -58,6 +58,12 @@ nav {
     left: 50%;
 }
 
+.nav li {
+    display: inline-block;
+    font-size: 90%;
+    padding: 10%;
+}
+
 a {
     text-decoration: none;
     color: grey;
