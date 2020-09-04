@@ -54,7 +54,8 @@ body {
 }
 
 #arrow_text {
-    font-size: 2rem;
+    font-size: 50%;
+    opacity: 0%;
 }
 
 
