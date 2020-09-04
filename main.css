@@ -59,14 +59,14 @@ nav {
     font-family: "Oswald";
     font-size: 100%;
     /* justify-content: space-between; */
-    /* padding: 10%; */
+    padding: 10%;
     position: fixed;
     width: 100%;
     /* background-color: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%); */
     
     /* center the element */
-    /* left: 50%; */
-    /* margin-left: -5rem; */
+    left: 50%;
+    margin-left: -5rem;
 }
 
 nav a {
