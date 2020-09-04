@@ -58,9 +58,9 @@ body {
 /* navigation bar */
 nav {
     font-family: "Oswald";
-    font-size: 100%;
+    font-size: 150%;
     /* justify-content: space-between; */
-    padding: 10%;
+    /* padding: 10%; */
     position: fixed;
     width: 100%;
     /* background-color: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%); */
