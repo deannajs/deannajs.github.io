@@ -17,7 +17,7 @@ body {
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
-.arrow_text {
+#arrow_text {
     font-family: Oswald;
     text-align: center;
     /* padding: 5%; */
