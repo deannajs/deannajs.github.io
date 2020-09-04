@@ -53,7 +53,7 @@ nav {
     font-family: "Oswald";
     font-size: 100%;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
     background-color: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
     
     /* center the element */
