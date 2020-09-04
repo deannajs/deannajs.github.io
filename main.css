@@ -58,12 +58,13 @@ nav {
     
     /* center the element */
     left: 50%;
-    margin-left: -3rem;
+    margin-left: -10rem;
 }
 
 nav a {
     text-align: center;
     text-decoration: none;
+    padding: 5%;
     color: grey;
 }
 
