@@ -43,8 +43,9 @@ body {
 #scroll_button {
     background: transparent;
     border: none;
-    /* outline: none; */
+    outline: none;
     text-align: center;
+    font-family: "Oswald";
 }
 
 /* navigation bar */
