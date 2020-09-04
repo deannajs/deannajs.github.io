@@ -17,21 +17,22 @@ body {
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
-#arrow_text {
+.scroll_down {
     font-family: Oswald;
     text-align: center;
-    /* padding: 5%; */
     margin-top: 7rem;
 }
+/* #arrow_text {
+    font-family: Oswald;
+    text-align: center;
+    margin-top: 7rem;
+} */
 
-/* .arrow::before { */
 #arrow {
-    /* content: '╲╱'; */
     color: black;
     animation: bounce 2s ease infinite;
     position: absolute;
     font-size: 2rem;
-    margin-top: -2rem;
 
     /* center the element */
     left: 50%;
@@ -44,7 +45,7 @@ body {
     }
 }
 
-.scroll_button {
+#scroll_button {
     background: transparent;
     border: none;
     /* outline: none; */
