@@ -62,7 +62,8 @@ nav {
     background-color: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
     
     /* center the element */
-    /* left: 50%; */
+    left: 50%;
+    margin-left: -5rem;
 }
 
 nav a {
