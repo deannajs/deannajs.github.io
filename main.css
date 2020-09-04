@@ -49,10 +49,10 @@ body {
 
 /* navigation bar */
 nav {
-    font-family: Verdana;
+    font-family: "Oswald";
     justify-content: space-between;
     position: fixed;
-    margin-left: 50%;
+    text-justify: center;
 }
 
 a {
