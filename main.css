@@ -50,8 +50,8 @@ body {
     background: transparent;
     /* border: none; */
     outline: none;
-    width: 20%;
-    height: 500%;
+    width: 5%;
+    font-size: 100%;
 }
 
 /* navigation bar */
