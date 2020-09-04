@@ -57,13 +57,13 @@ nav {
     left: 50%;
 }
 
-.nav a {
+nav a {
     text-align: center;
     text-decoration: none;
     color: grey;
 }
 
-.nav a:hover {
+nav a:hover {
     color: darkgrey;
 }
 
