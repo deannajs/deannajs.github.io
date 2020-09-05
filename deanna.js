@@ -2,7 +2,7 @@ window.onload = function(){
   document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
 
   function scrollToAboutMe() {
-    document.getElementById("about me").scrollIntoView({behavior: "smooth", block: "nearest"});
+    document.getElementById("about me").scrollIntoView({behavior: "smooth", block: "start"});
   }
 }
 
