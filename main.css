@@ -39,6 +39,7 @@ body {
     width: 100%;
     background-color: white;
     top: 0px;
+    opacity: 0;
 }
 
 nav a {
