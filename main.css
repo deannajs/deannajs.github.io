@@ -30,6 +30,7 @@ body {
     /* border: none; */
     outline: none;
     width: 5%;
+    margin-top: -1rem;
 }
 
 #arrow {
@@ -43,7 +44,7 @@ body {
     margin-left: -2rem;
 }
 
-#arrow:hover {
+#scroll_button:hover {
     color: darkgrey;
 }
   
