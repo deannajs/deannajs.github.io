@@ -23,8 +23,8 @@ nav a {
     text-decoration: none;
     padding-left: 2%;
     padding-right: 2%;
-    padding-top: 0.75%;
-    padding-bottom: 0.75%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: grey;
     /* display: inline-block; */
 }
