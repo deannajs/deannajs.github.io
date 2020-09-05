@@ -67,11 +67,11 @@ nav {
     font-size: 120%;
     position: fixed;
     width: 100%;
-    background-color: -webkit-linear-gradient(top, bisque 16%, pink 35%, powderblue 55%, plum 75%, darkseagreen 86%, sandybrown 100%);
+    background-color: white;
     
     /* center the element */
     left: 50%;
-    margin-left: -15rem;
+    margin-left: -16rem;
 }
 
 nav a {
