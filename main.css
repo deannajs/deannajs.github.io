@@ -17,7 +17,8 @@ nav {
     
     /* center the element */
     left: 50%;
-    margin-left: -20rem;
+    margin-left: -30rem;
+    top: 0px;
 }
 
 nav a {
