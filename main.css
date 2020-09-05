@@ -12,8 +12,9 @@ nav {
     font-family: "Oswald";
     font-size: 120%;
     position: fixed;
-    width: 200%;
+    /* width: 200%; */
     background-color: white;
+    display: inline;
     
     /* center the element */
     left: 50%;
@@ -26,7 +27,6 @@ nav a {
     text-decoration: none;
     padding: 2%;
     color: grey;
-    display: inline-block;
 }
 
 nav a:hover {
