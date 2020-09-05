@@ -7,7 +7,29 @@ body {
     /* background: linear-gradient(#000, #000) no-repeat center/2px 100%; */
 }
 
+/* navigation bar */
+nav {
+    font-family: "Oswald";
+    font-size: 120%;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    
+    /* center the element */
+    left: 50%;
+    margin-left: -20rem;
+}
 
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 2%;
+    color: grey;
+}
+
+nav a:hover {
+    color: darkgrey;
+}
 /* name banner */
 .banner{
     text-align: center;
@@ -59,31 +81,6 @@ body {
     opacity: 0%;
 }
 
-
-
-/* navigation bar */
-nav {
-    font-family: "Oswald";
-    font-size: 120%;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    
-    /* center the element */
-    left: 50%;
-    margin-left: -20rem;
-}
-
-nav a {
-    text-align: center;
-    text-decoration: none;
-    padding: 2%;
-    color: grey;
-}
-
-nav a:hover {
-    color: darkgrey;
-}
 
 /* text & images */ 
 
