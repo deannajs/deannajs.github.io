@@ -26,6 +26,7 @@ nav a {
     text-decoration: none;
     padding: 2%;
     color: grey;
+    display: inline-block;
 }
 
 nav a:hover {
