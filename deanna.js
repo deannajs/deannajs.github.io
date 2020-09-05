@@ -28,9 +28,10 @@ $(document).ready(function() {
       
       /* If the object is completely visible in the window, fade it in */
       if( bottom_of_window > bottom_of_object ){
-          
-          $("#navbar").animate({'opacity':'1'},1500);
-              
+          $("#navbar").fadeIn();
+      } else {
+        $("#navbar").fadeOut();
+
       }
           
   
