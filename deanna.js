@@ -16,6 +16,7 @@ function updateScrollProgress() {
 }
 
 
+$(function() {
 $(document).ready(function() {
     
   /* Every time the window is scrolled ... */
@@ -37,4 +38,5 @@ $(document).ready(function() {
   
   });
   
+});
 });
