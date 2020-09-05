@@ -52,7 +52,7 @@ nav a:hover {
     /* border: none; */
     outline: none;
     width: 5%;
-    margin-top: -15rem;
+    top: -5rem;
 }
 
 #arrow {
