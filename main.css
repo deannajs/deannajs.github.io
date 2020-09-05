@@ -13,12 +13,12 @@ body {
     font-size: 120%;
     position: fixed;
     text-align: center;
-    width: 200%;
+    /* width: 200%; */
     background-color: white;
     
     /* center the element */
-    left: 50%;
-    margin-left: -33rem;
+    /* left: 50%; */
+    /* margin-left: -33rem; */
     top: 0px;
 }
 
@@ -27,6 +27,7 @@ nav a {
     text-decoration: none;
     padding: 2%;
     color: grey;
+    display: inline-block;
 }
 
 nav a:hover {
