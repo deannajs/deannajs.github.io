@@ -27,7 +27,7 @@ body {
 /* The progress bar (scroll indicator) */
 .progress-bar {
     height: 4px;
-    background: black;
+    background: grey;
     width: 0%;
 }
 
