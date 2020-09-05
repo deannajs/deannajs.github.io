@@ -23,7 +23,7 @@ $(document).ready(function() {
   
       /* Check the location of each desired element */
           
-      var bottom_of_object = $("#navbar").position().top + $("#navbar").outerHeight();
+      var bottom_of_object = $(".section_header").position().top + $(".section_header").outerHeight();
       var bottom_of_window = $(window).scrollTop() + $(window).height();
       
       /* If the object is completely visible in the window, fade it in */
