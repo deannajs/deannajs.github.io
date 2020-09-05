@@ -68,7 +68,7 @@ nav a:hover {
     margin-left: -2rem;
 }
 
-#scroll_button:hover {
+#scroll_button:hover #arrow {
     color: darkgrey;
 }
   
