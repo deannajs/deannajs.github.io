@@ -8,10 +8,11 @@ body {
 }
 
 /* navigation bar */
-nav {
+#navbar {
     font-family: "Oswald";
     font-size: 120%;
     position: fixed;
+    text-align: center;
     width: 200%;
     background-color: white;
     
