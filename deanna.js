@@ -4,7 +4,7 @@ window.onload = function(){
   function scrollToAboutMe() {
     var element = document.getElementById("about me");
     var headerOffset = 13;
-    var elementPosition = element.getBoundingClientRect().top();
+    var elementPosition = element.offsetTop();
     var offsetPosition = elementPosition - headerOffset;
 
     window.scrollTo({top: offsetPosition, behavior: "smooth"})
