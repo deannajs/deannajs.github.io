@@ -2,7 +2,12 @@ window.onload = function(){
   document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
 
   function scrollToAboutMe() {
-    document.getElementById("about me").scrollIntoView({behavior: "smooth", block: "center"});
+    var element = document.getElementById("about me");
+    var headerOffset = 13;
+    var elementPosition = element.getBoundingClientRect().top();
+    var offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({top: offsetPosition, behavior: "smooth"})
   }
 }
 
