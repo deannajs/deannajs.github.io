@@ -77,7 +77,7 @@ nav a:hover {
     /* border: none; */
     outline: none;
     width: 5rem;
-    margin-top: -5rem;
+    margin-top: -5px;
 }
 
 #arrow {
