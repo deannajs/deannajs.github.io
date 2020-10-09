@@ -78,7 +78,7 @@ nav a:hover {
     outline: none;
     width: 5rem;
     height: 10rem;
-    position: absolute;
+    position: relative;
     left: 50%;
 
     /* margin-top: -5px; */
