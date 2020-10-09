@@ -78,7 +78,10 @@ nav a:hover {
     outline: none;
     width: 5rem;
     height: 10rem;
-    margin-top: -5px;
+    position: absolute;
+    left: 50%;
+
+    /* margin-top: -5px; */
 }
 
 #arrow {
