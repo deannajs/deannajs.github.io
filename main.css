@@ -73,11 +73,12 @@ nav a:hover {
 }
 
 #scroll_button {
+    display: inline-block;
     background: transparent;
     /* border: none; */
     outline: none;
     position: relative;
-    width: 10%;
+    width: 5%;
     height: 10%;
     /* width: 5rem;
     height: 10rem; */
