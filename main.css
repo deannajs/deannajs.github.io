@@ -73,11 +73,16 @@ nav a:hover {
 }
 
 #scroll_button {
+    display: inline-block;
     background: transparent;
     /* border: none; */
     outline: none;
-    width: 5rem;
-    margin-top: -5px;
+    text-align: center;
+    /* position: relative;
+    width: 8%;
+    height: 50%; */
+    /* height: 10rem;  */
+    /* margin-top: 1rem; */
 }
 
 #arrow {
