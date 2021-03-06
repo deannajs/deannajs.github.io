@@ -10,7 +10,10 @@ function updateScrollProgress() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
+
+window.onload = function() {
+  document.getElementById("scroll_button").onclick = scrollToAboutMe;
+}
 
 function scrollToAboutMe() {
   console.log("scrolling to about me");
