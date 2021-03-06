@@ -2,7 +2,7 @@
 
 /* background colors */
 body {
-    background: -webkit-linear-gradient(top, bisque 16%, #f8f8ff 18%);
+    background: -webkit-linear-gradient(top, bisque 100px, #f8f8ff 200px);
     margin: 0px;
 }
 
