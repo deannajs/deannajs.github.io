@@ -1,15 +1,5 @@
 window.onload() = function() {
   document.getElementById("scroll_button").onclick = scrollToAboutMe;
-
-  function scrollToAboutMe() {
-    console.log("scrolling to about me");
-    var element = document.getElementById("about me");
-    var headerOffset = 13;
-    var elementPosition = element.offsetTop();
-    var offsetPosition = elementPosition - headerOffset;
-
-    window.scrollTo({top: offsetPosition, behavior: "smooth"})
-  }
 }
 
 window.onscroll = function() {updateScrollProgress()};
@@ -21,7 +11,12 @@ function updateScrollProgress() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-function scrollTo(sectionName) {
-  document.getElementById(sectionName);
+function scrollToAboutMe() {
+  console.log("scrolling to about me");
+  var element = document.getElementById("about me");
+  var headerOffset = 13;
+  var elementPosition = element.offsetTop();
+  var offsetPosition = elementPosition - headerOffset;
 
+  window.scrollTo({top: offsetPosition, behavior: "smooth"})
 }
