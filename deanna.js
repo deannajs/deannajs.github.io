@@ -1,5 +1,5 @@
 window.onload() = function() {
-  document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
+  document.getElementById("scroll_button").onclick = scrollToAboutMe;
 
   function scrollToAboutMe() {
     console.log("scrolling to about me");
