@@ -1,6 +1,7 @@
 document.getElementById("scroll_button").onclick = function() {scrollToAboutMe()};
 
 function scrollToAboutMe() {
+  console.log("scrolling to about me");
   var element = document.getElementById("about me");
   var headerOffset = 13;
   var elementPosition = element.offsetTop();
@@ -19,7 +20,6 @@ function updateScrollProgress() {
 }
 
 function scrollTo(sectionName) {
-  console.log("scrolling to ", sectionName);
   document.getElementById(sectionName);
 
 }
