@@ -3,6 +3,8 @@
     src: url("/fonts/Autumn\ Chant.otf") format("opentype");
 }
 
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
