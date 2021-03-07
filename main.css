@@ -90,7 +90,11 @@ nav a:hover {
 
 #arrow {
     color: black;
-    animation: bounce 3s ease infinite;
+    animation: bounce 3s ease infinite; 
+    /* animation-name: bounce
+     * animation-duration: 3s
+     * 
+    */
     position: absolute;
     font-size: 2rem;
 
@@ -106,6 +110,9 @@ nav a:hover {
 @keyframes bounce {
     50% {
         transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(+50%);
     }
 }
 
