@@ -15,7 +15,8 @@ window.onload = function() {
 function scrollToAboutMe() {
   console.log("scrolling to about me");
   var element = document.getElementById("about me");
-  var headerOffset = document.getElementById("navbar").offsetHeight;
+  // var headerOffset = document.getElementById("navbar").offsetHeight;
+  var headerOffset = 0;
   var elementPosition = element.offsetTop;
   var offsetPosition = elementPosition - headerOffset;
 
