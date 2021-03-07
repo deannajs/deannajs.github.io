@@ -62,11 +62,11 @@ nav a:hover {
 #subname { font-size: 200%;}
 
 /* scroll down arrow */
-#scroll_down {
+/* #scroll_down {
     font-family: "Oswald";
     margin-top: 9rem;
     text-align: center;
-}
+} */
 
 #scroll_button {
     display: inline-block;
@@ -83,6 +83,7 @@ nav a:hover {
     /* center the element */
     left: 50%;
     margin-left: -2rem;
+    margin-top: 9rem;
 }
 
 #scroll_button:hover {
