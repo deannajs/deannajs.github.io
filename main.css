@@ -3,11 +3,6 @@
     src: url("/fonts/Autumn\ Chant.otf") format("opentype");
 }
 
-@font-face {
-    font-family: "Deanna";
-    src: url("/fonts/Deanna.ttf") format("truetype");
-}
-
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
@@ -123,9 +118,8 @@ nav a:hover {
 /* text & images */ 
 
 p{
-    /* font-family: Roboto Slab; */
-    font-family: Deanna;
-    font-size: 300%;
+    font-family: Roboto Slab;
+    font-size: 105%;
     padding: 5%;
     margin-top: 13%;
     margin-bottom: 13%;
