@@ -3,7 +3,10 @@
     src: url("/fonts/Autumn\ Chant.otf") format("opentype");
 }
 
-@import url("https://fonts.googleapis.com/css?family=Oswald");
+@font-face {
+    font-family: "Oswald";
+    src: url("https://fonts.googleapis.com/css?family=Oswald");
+}
 
 /* background colors */
 body {
