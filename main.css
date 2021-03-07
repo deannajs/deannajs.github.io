@@ -3,11 +3,6 @@
     src: url("/fonts/Autumn\ Chant.otf") format("opentype");
 }
 
-@font-face {
-    font-family: "Oswald";
-    src: url("https://fonts.googleapis.com/css?family=Oswald");
-}
-
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
@@ -96,10 +91,6 @@ nav a:hover {
 #arrow {
     color: black;
     animation: bounce 3s ease infinite; 
-    /* animation-name: bounce
-     * animation-duration: 3s
-     * 
-    */
     position: absolute;
     font-size: 2rem;
 
@@ -115,9 +106,6 @@ nav a:hover {
 @keyframes bounce {
     50% {
         transform: translateY(-50%);
-    }
-    100% {
-        transform: translateY(+50%);
     }
 }
 
