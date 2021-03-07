@@ -22,9 +22,9 @@ function scrollToAboutMe() {
   window.scrollTo({top: offsetPosition, behavior: "smooth"});
 }
 
-function scrollToProjects() {
-  console.log("scrolling to projects");
-  var element = document.getElementById("projects");
+function scrollToId(idName) {
+  console.log("scrolling to ", idName);
+  var element = document.getElementById(idName);
   var headerOffset = document.getElementById("navbar").offsetHeight;
   var elementPosition = element.offsetTop;
   var offsetPosition = elementPosition - headerOffset;
