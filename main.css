@@ -79,8 +79,19 @@ nav a:hover {
     height: 50%; */
     /* height: 10rem;  */
     /* margin-top: 1rem; */
+    color: black;
+    animation: bounce 3s ease infinite; 
+    position: absolute;
+    font-size: 2rem;
+
+    /* center the element */
+    left: 50%;
+    margin-left: -2rem;
 }
 
+#scroll_button: hover {
+    color: darkgrey;
+}
 #arrow {
     color: black;
     animation: bounce 3s ease infinite; 
