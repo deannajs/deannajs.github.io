@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Autumn Chant";
+    src: url("/fonts/Autumn\ Chant.otf");
+}
 
 
 /* background colors */
@@ -125,7 +129,8 @@ p{
 
 .section_header {
     font-size: 150%;
-    font-family: Oswald;
+    /* font-family: Oswald; */
+    font-family: Autumn Chant;
     color: black;
     font-weight: bold;
 }
@@ -140,11 +145,4 @@ p{
     float: left;
 }
 
-.workpic {
-    height: 30%;
-    width: 20%;
-    padding: 5%;
-    margin-top: 13%;
-    float: left;
-}
 

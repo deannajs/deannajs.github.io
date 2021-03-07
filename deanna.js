@@ -1,6 +1,3 @@
-
-
-
 window.onscroll = function() {updateScrollProgress()};
 
 function updateScrollProgress() {
@@ -18,7 +15,17 @@ window.onload = function() {
 function scrollToAboutMe() {
   console.log("scrolling to about me");
   var element = document.getElementById("about me");
-  var headerOffset = 13;
+  var headerOffset = document.getElementById("navbar").offsetHeight;
+  var elementPosition = element.offsetTop;
+  var offsetPosition = elementPosition - headerOffset;
+
+  window.scrollTo({top: offsetPosition, behavior: "smooth"});
+}
+
+function scrollToProjects() {
+  console.log("scrolling to projects");
+  var element = document.getElementById("projects");
+  var headerOffset = document.getElementById("navbar").offsetHeight;
   var elementPosition = element.offsetTop;
   var offsetPosition = elementPosition - headerOffset;
 
