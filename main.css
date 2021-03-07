@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Autumn Chant";
-    src: url("/fonts/Autumn\ Chant.otf");
+    src: url("/fonts/Autumn\ Chant.otf") format("opentype");
 }
 
 
