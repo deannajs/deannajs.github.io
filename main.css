@@ -108,7 +108,7 @@ nav a:hover {
 .section{
     font-family: Roboto Slab;
     font-size: 105%;
-    padding: 5%;
+    /* padding: 5%; */
     margin-top: 13%;
     margin-bottom: 13%;
     margin-right: 15%;
@@ -126,7 +126,7 @@ nav a:hover {
 .profilepic {
     height: 30%;
     width: 20%;
-    padding: 5%;
+    /* padding: 5%; */
     margin-top: 13%;
     border-radius: 85px; 
     float: left;
