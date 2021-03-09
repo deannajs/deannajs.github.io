@@ -40,6 +40,7 @@ function updateBackgroundColor() {
   var element = document.getElementById("navbar");
   var bodyBackgroundColor = window.getComputedStyle(document.body, null).getPropertyValue('background');
   console.log("background color type is ", typeof(bodyBackgroundColor));
-  console.log("background color is ", bodyBackgroundColor[0]);
+  console.log("background color is ", bodyBackgroundColor);
+  console.log("background color element 0 is ", bodyBackgroundColor[0]);
   element.style.backgroundColor = bodyBackgroundColor;
 }
