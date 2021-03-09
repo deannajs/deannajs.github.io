@@ -33,7 +33,6 @@ body {
     position: fixed;
     text-align: right;
     width: 100%;
-    /* background-color: white; */
     background-blend-mode: initial;
     top: 0px;
     opacity: 1;
@@ -46,7 +45,7 @@ nav a {
     padding-right: 2%;
     padding-top: 2%;
     padding-bottom: 2%;
-    color: grey;
+    color: black;
 }
 
 nav a:hover {
