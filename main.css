@@ -33,7 +33,7 @@ body {
     position: fixed;
     text-align: right;
     width: 100%;
-    /* background-blend-mode: initial; */
+    background-blend-mode: initial;
     mix-blend-mode: initial;
     top: 0px;
     opacity: 1;
