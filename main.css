@@ -36,7 +36,7 @@ body {
     /* background-color: white; */
     background-blend-mode: initial;
     top: 0px;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 nav a {
