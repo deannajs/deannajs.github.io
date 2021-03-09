@@ -143,7 +143,7 @@ nav a:hover {
 #leaf2_gif {
     position: absolute;
     height: 20%;
-    transform: rotate(270);
+    transform: rotate(-90deg);
     top: 0;
     left: 0;
 }
