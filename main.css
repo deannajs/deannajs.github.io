@@ -35,7 +35,7 @@ body {
     width: 100%;
     background-color: white;
     background-blend-mode: initial;
-    /* mix-blend-mode: initial; */
+    mix-blend-mode: initial;
     top: 0px;
 }
 
