@@ -33,7 +33,8 @@ body {
     position: fixed;
     text-align: right;
     width: 100%;
-    background-blend-mode: initial;
+    /* background-blend-mode: initial; */
+    mix-blend-mode: initial;
     top: 0px;
     opacity: 1;
 }
@@ -143,8 +144,7 @@ nav a:hover {
 #leaf2_gif {
     position: absolute;
     height: 20%;
-    transform: scaleX(-1) rotate(90deg);
-    /* transform: scaleX(-1); */
+    transform: scaleX(-1) rotate(-90deg);
     top: 0;
     left: 0;
 }
