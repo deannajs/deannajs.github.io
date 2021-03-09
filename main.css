@@ -144,6 +144,7 @@ nav a:hover {
     position: absolute;
     height: 20%;
     transform: rotate(180deg);
+    transform: scaleX(-1);
     /* transform: scaleX(-1); */
     top: 0;
     left: 0;
