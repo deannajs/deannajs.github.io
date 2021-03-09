@@ -133,11 +133,40 @@ nav a:hover {
     float: left;
 }
 
+/* gifs */
 #leaf_gif {
     position: absolute;
     height: 20%;
     bottom: 0;
     right: 0;
+}
+
+#heart1_gif {
+    position: absolute;
+    height: 20%;
+    left: 10vw;
+    top: 10vh;
+}
+
+#heart2_gif {
+    position: absolute;
+    height: 20%;
+    right: 10vw;
+    top: 20vh;
+}
+
+#heart3_gif {
+    position: absolute;
+    height: 20%;
+    left: 30vw;
+    bottom: 10vh;
+}
+
+#musicnote_gif {
+    position: absolute;
+    height: 20%;
+    left: 15vw;
+    bottom: 25vh;
 }
 
 
