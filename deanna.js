@@ -1,15 +1,18 @@
-window.onscroll = function() {updateScrollProgress()};
+
+window.onload = function() {
+  document.getElementById("scroll_button").onclick = scrollToAboutMe;
+}
+
+window.onscroll = function() {
+  updateScrollProgress();
+  updateBackgroundColor();
+}
 
 function updateScrollProgress() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-
-window.onload = function() {
-  document.getElementById("scroll_button").onclick = scrollToAboutMe;
 }
 
 function scrollToAboutMe() {
@@ -31,4 +34,11 @@ function scrollToId(idName) {
   var offsetPosition = elementPosition - headerOffset;
 
   window.scrollTo({top: offsetPosition, behavior: "smooth"});
+}
+
+function updateBackgroundColor() {
+  var element = document.getElementById("navbar");
+  var bodyBackgroundColor = document.body.style.backgroundColor;
+  console.log("background color is ", body);
+  element.style.backgroundColor = bodyBackgroundColor;
 }
