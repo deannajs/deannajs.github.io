@@ -5,7 +5,7 @@
 
 /* background colors */
 body {
-    background-color: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
+    background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
     margin: 0px;
 }
 
