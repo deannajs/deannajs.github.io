@@ -140,6 +140,14 @@ nav a:hover {
     right: 0;
 }
 
+#leaf2_gif {
+    position: absolute;
+    height: 20%;
+    transform: rotate(270);
+    top: 0;
+    left: 0;
+}
+
 #heart1_gif {
     position: absolute;
     height: 20%;
