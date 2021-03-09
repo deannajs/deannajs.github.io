@@ -38,7 +38,7 @@ function scrollToId(idName) {
 
 function updateBackgroundColor() {
   var element = document.getElementById("navbar");
-  var bodyBackgroundColor = document.body.style.backgroundColor;
+  var bodyBackgroundColor = window.getComputedStyle(document.body).getPropertyValue('background');
   console.log("background color is ", bodyBackgroundColor);
   element.style.backgroundColor = bodyBackgroundColor;
 }
