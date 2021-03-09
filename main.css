@@ -132,4 +132,10 @@ nav a:hover {
     float: left;
 }
 
+.leaf_gif {
+    height: 10%;
+    width: 10%;
+    position: relative;
+}
+
 
