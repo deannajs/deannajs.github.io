@@ -182,7 +182,7 @@ nav a:hover {
 }
 
 #computer_gif {
-    position: absolute;
+    position: relative;
     max-width: 40%;
     height: auto;
     right: 10vw;
