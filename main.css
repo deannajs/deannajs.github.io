@@ -134,14 +134,16 @@ nav a:hover {
 /* gifs */
 #leaf_gif {
     position: absolute;
-    height: 20%;
+    max-height: 20%;
+    width: auto;
     bottom: 0;
     right: 0;
 }
 
 #leaf2_gif {
     position: absolute;
-    height: 20%;
+    max-width: 20%;
+    height: auto;
     transform: scaleX(-1) rotate(-90deg);
     top: 0;
     left: 0;
@@ -149,35 +151,40 @@ nav a:hover {
 
 #heart1_gif {
     position: absolute;
-    height: 20%;
+    max-width: 20%;
+    height: auto;
     left: 10vw;
     top: 10vh;
 }
 
 #heart2_gif {
     position: absolute;
-    height: 20%;
+    max-width: 20%;
+    height: auto;
     right: 10vw;
     top: 20vh;
 }
 
 #heart3_gif {
     position: absolute;
-    height: 20%;
+    max-width: 20%;
+    height: auto;
     left: 30vw;
     bottom: 10vh;
 }
 
 #musicnote_gif {
     position: absolute;
-    height: 20%;
+    max-width: 20%;
+    height: auto;
     left: 15vw;
     bottom: 25vh;
 }
 
 #computer_gif {
     position: absolute;
-    height: 40%;
+    max-width: 40%;
+    height: auto;
     right: 10vw;
     bottom: 5vh;
 }
