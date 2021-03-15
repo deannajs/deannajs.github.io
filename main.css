@@ -189,4 +189,12 @@ nav a:hover {
     bottom: 5vh;
 }
 
+#gudetama_gif {
+    position: absolute;
+    max-width: 20%;
+    height: auto;
+    top: 5vh;
+    left: 50vw;
+}
+
 
