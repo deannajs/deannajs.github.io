@@ -175,14 +175,6 @@ nav a:hover {
     bottom: 10vh;
 }
 
-#musicnote_gif {
-    position: absolute;
-    max-width: 10%;
-    height: auto;
-    left: 10vw;
-    bottom: 15vh;
-}
-
 #computer_gif {
     position: absolute;
     max-width: 15%;
@@ -202,6 +194,15 @@ nav a:hover {
 #camera_gif {
     position: absolute;
     max-width: 20%;
+    height: auto;
+    left: 10vw;
+    bottom: 15vh;
+
+}
+
+#musicnote_gif {
+    position: absolute;
+    max-width: 10%;
     height: auto;
     top: 15vh;
     right: 0vw;
