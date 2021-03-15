@@ -201,10 +201,10 @@ nav a:hover {
 
 #camera_gif {
     position: absolute;
-    max-width: 10%;
+    max-width: 20%;
     height: auto;
-    top: 5vh;
-    right: 5vw;
+    top: 8vh;
+    right: 8vw;
 }
 
 
