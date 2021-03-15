@@ -136,8 +136,8 @@ nav a:hover {
 /* gifs */
 #leaf_gif {
     position: absolute;
-    max-height: 20%;
-    width: auto;
+    max-width: 20%;
+    height: auto;
     bottom: 0;
     right: 0;
 }
