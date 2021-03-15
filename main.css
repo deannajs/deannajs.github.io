@@ -56,6 +56,7 @@ nav a:hover {
     letter-spacing: 2%;
     margin-top: 13%;
     font-family: "Oswald";
+    height: 100vh;
 }
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
