@@ -187,7 +187,7 @@ nav a:hover {
     position: absolute;
     max-width: 15%;
     height: auto;
-    right: 15vw;
+    right: 25vw;
     bottom: 7vh;
 }
 
@@ -196,14 +196,14 @@ nav a:hover {
     max-width: 20%;
     height: auto;
     top: 5vh;
-    left: 50vw;
+    left: 45vw;
 }
 
 #camera_gif {
     position: absolute;
     max-width: 20%;
     height: auto;
-    top: 8vh;
+    top: 15vh;
     right: 8vw;
 }
 
