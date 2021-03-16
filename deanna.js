@@ -1,11 +1,11 @@
 
 window.onload = function() {
-  document.getElementById("scroll_button").onclick = scrollToId('about');
-  document.getElementById("navbar_about").onclick = scrollToId('about');
-  document.getElementById("navbar_projects").onclick = scrollToId('projects');
-  document.getElementById("navbar_contact").onclick = scrollToId('contact');
-
 }
+document.getElementById("scroll_button").onclick = scrollToId('about');
+document.getElementById("navbar_about").onclick = scrollToId('about');
+document.getElementById("navbar_projects").onclick = scrollToId('projects');
+document.getElementById("navbar_contact").onclick = scrollToId('contact');
+
 
 window.onscroll = function() {
   updateScrollProgress();
