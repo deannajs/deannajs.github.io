@@ -160,8 +160,8 @@ footer {
     max-width: 20%;
     height: auto;
     /* top: 5vh; */
-    /* left: 42vw;
-    top: 5vh; */
+    left: 42vw;
+    top: -10vh;
 }
 
 #camera_gif {
