@@ -151,8 +151,8 @@ footer {
     position: absolute;
     max-width: 8%;
     height: auto;
-    top: 10vh;
-    right: 30vw;
+    /* top: 10vh;
+    right: 30vw; */
 }
 
 #gudetama_gif {
@@ -168,24 +168,24 @@ footer {
     position: absolute;
     max-width: 10%;
     height: auto;
-    top: 13vh;
-    left: 33vw;
+    /* top: 13vh;
+    left: 33vw; */
 }
 
 #musicnote_gif {
     position: absolute;
     max-width: 4%;
     height: auto;
-    top: 15vh;
-    right: 26vw;
+    /* top: 15vh;
+    right: 26vw; */
 }
 
 #journal_gif {
     position: absolute;
     max-width: 5%;
     height: auto;
-    top: 15vh;
-    left: 26vw;
+    /* top: 15vh;
+    left: 26vw; */
 }
 
 
