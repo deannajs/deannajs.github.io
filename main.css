@@ -220,15 +220,15 @@ footer {
 
 #musicnote_gif {
     position: absolute;
-    max-width: 6%;
+    max-width: 5%;
     height: auto;
     top: 15vh;
-    right: 29vw;
+    right: 26vw;
 }
 
 #journal_gif {
     position: absolute;
-    max-width: 4%;
+    max-width: 5%;
     height: auto;
     top: 15vh;
     left: 25vw;
