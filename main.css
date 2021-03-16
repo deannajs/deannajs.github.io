@@ -8,6 +8,11 @@
     src: url("/fonts/UnicornConfetti-qZBD0.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "San Diego";
+    src: url("/fonts/San\ Diego.ttf") format("truetype");
+}
+
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
@@ -117,7 +122,7 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: Unicorn Confetti;
+    font-family: San Diego;
     color: black;
     font-weight: bold;
     /* margin: 10%; */
@@ -134,7 +139,7 @@ nav a:hover {
 }
 
 footer {
-    font-family: Unicorn Confetti;
+    font-family: San Diego;
     text-align: center;
 }
 
