@@ -217,5 +217,12 @@ footer {
     right: 25vw;
 }
 
+#journal_gif {
+    position: absolute;
+    max-width: 4%;
+    height: auto;
+    top: 15vh;
+    left: 25vw;
+}
 
 
