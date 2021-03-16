@@ -182,10 +182,10 @@ footer {
 
 #computer_gif {
     position: absolute;
-    max-width: 15%;
+    max-width: 8%;
     height: auto;
+    top: 5vh;
     right: 20vw;
-    bottom: 10vh;
 }
 
 #gudetama_gif {
@@ -198,19 +198,18 @@ footer {
 
 #camera_gif {
     position: absolute;
-    max-width: 21%;
+    max-width: 10%;
     height: auto;
-    left: 10vw;
-    bottom: 15vh;
-
+    top: 5vh;
+    left: 15vw;
 }
 
 #musicnote_gif {
     position: absolute;
-    max-width: 7%;
+    max-width: 4%;
     height: auto;
-    top: 15vh;
-    right: 7vw;
+    top: 5vh;
+    right: 14vw;
 }
 
 
