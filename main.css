@@ -78,13 +78,6 @@ nav a:hover {
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
 
-/* scroll down arrow */
-/* #scroll_down {
-    font-family: "Oswald";
-    margin-top: 9rem;
-    text-align: center;
-} */
-
 #scroll_button {
     display: inline-block;
     background: transparent;
@@ -154,47 +147,6 @@ footer {
 }
 
 /* gifs */
-#leaf_gif {
-    position: absolute;
-    max-width: 20%;
-    height: auto;
-    bottom: 0;
-    right: 0;
-}
-
-#leaf2_gif {
-    position: absolute;
-    max-width: 20%;
-    height: auto;
-    transform: scaleX(-1) rotate(-90deg);
-    top: 0;
-    left: 0;
-}
-
-#heart1_gif {
-    position: absolute;
-    max-width: 20%;
-    height: auto;
-    left: 10vw;
-    top: 10vh;
-}
-
-#heart2_gif {
-    position: absolute;
-    max-width: 20%;
-    height: auto;
-    right: 10vw;
-    top: 20vh;
-}
-
-#heart3_gif {
-    position: absolute;
-    max-width: 20%;
-    height: auto;
-    left: 30vw;
-    bottom: 10vh;
-}
-
 #computer_gif {
     position: absolute;
     max-width: 8%;
@@ -207,8 +159,9 @@ footer {
     position: absolute;
     max-width: 20%;
     height: auto;
-    top: 5vh;
+    /* top: 5vh; */
     left: 42vw;
+    bottom: 5vh;
 }
 
 #camera_gif {
