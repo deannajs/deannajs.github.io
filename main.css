@@ -190,7 +190,7 @@ footer {
     max-width: 8%;
     height: auto;
     top: 10vh;
-    right: 25vw;
+    right: 30vw;
 }
 
 #gudetama_gif {
@@ -205,8 +205,8 @@ footer {
     position: absolute;
     max-width: 10%;
     height: auto;
-    top: 10vh;
-    left: 25vw;
+    top: 13vh;
+    left: 35vw;
 }
 
 #musicnote_gif {
