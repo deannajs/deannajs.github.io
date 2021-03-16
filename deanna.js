@@ -1,6 +1,10 @@
 
 window.onload = function() {
-  document.getElementById("scroll_button").onclick = scrollToAboutMe;
+  document.getElementById("scroll_button").onclick = scrollToId('about');
+  document.getElementById("navbar_about").onclick = scrollToId('about');
+  document.getElementById("navbar_projects").onclick = scrollToId('projects');
+  document.getElementById("navbar_contact").onclick = scrollToId('contact');
+
 }
 
 window.onscroll = function() {
@@ -15,18 +19,7 @@ function updateScrollProgress() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-function scrollToAboutMe() {
-  console.log("scrolling to about me");
-  var element = document.getElementById("about me");
-  var headerOffset = document.getElementById("navbar").offsetHeight;
-  var elementPosition = element.offsetTop;
-  var offsetPosition = elementPosition - headerOffset;
-
-  window.scrollTo({top: offsetPosition, behavior: "smooth"});
-}
-
 function scrollToId(idName) {
-  console.log("scrolling to ", idName);
   var element = document.getElementById(idName);
   var headerOffset = document.getElementById("navbar").offsetHeight;
   var elementPosition = element.offsetTop;
