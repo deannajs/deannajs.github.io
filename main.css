@@ -3,6 +3,11 @@
     src: url("/fonts/Autumn\ Chant.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Unicorn Confetti";
+    src: url("/fonts/UnicornConfetti-qZBD0.ttf") format("truetype");
+}
+
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
@@ -112,7 +117,7 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: Autumn Chant;
+    font-family: Unicorn Confetti;
     color: black;
     font-weight: bold;
     /* margin: 10%; */
@@ -128,7 +133,10 @@ nav a:hover {
     float: left;
 }
 
-
+footer {
+    font-family: Unicorn Confetti;
+    text-align: center;
+}
 
 /* gifs */
 #leaf_gif {
