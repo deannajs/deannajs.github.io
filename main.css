@@ -13,6 +13,12 @@
     src: url("/fonts/San\ Diego.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Silent Caroline";
+    src: url("/fonts/Silent\ Caroline.otf") format("opentype");
+}
+
+
 /* background colors */
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
@@ -122,7 +128,7 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: San Diego;
+    font-family: Silent Caroline;
     color: black;
     font-weight: bold;
     /* margin: 10%; */
@@ -139,7 +145,7 @@ nav a:hover {
 }
 
 footer {
-    font-family: San Diego;
+    font-family: Silent Caroline;
     text-align: center;
 }
 
