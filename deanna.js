@@ -1,6 +1,6 @@
 
 window.onload = function() {
-  document.getElementById("scroll_button").onclick = scrollToId('about');
+  document.getElementById("scroll_button").onclick = scrollToId('about me');
 }
 
 window.onscroll = function() {
