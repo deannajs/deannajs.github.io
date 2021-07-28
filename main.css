@@ -111,6 +111,11 @@ nav a:hover {
     color: darkgrey;
 }
 
+#home_button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
   
 @keyframes bounce {
     50% {
