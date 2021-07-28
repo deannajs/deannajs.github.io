@@ -20,7 +20,7 @@ function scrollToId(idName) {
 
   // find offset from top of page
   var elementPosition = element.getBoundingClientRect().top + window.scrollY;
-  
+
   var offsetPosition = elementPosition - headerOffset;
 
   window.scrollTo({top: offsetPosition, behavior: "smooth"});
@@ -29,6 +29,7 @@ function scrollToId(idName) {
 function scrollToTop() {
   window.scrollTo({top: 0, behavior: "smooth"});
 }
+
 function updateBackgroundColor() {
   var element = document.getElementById("navbar");
   var bodyBackgroundColor = window.getComputedStyle(document.body, null).getPropertyValue('background');
@@ -37,3 +38,17 @@ function updateBackgroundColor() {
   console.log("background color element 0 is ", bodyBackgroundColor[0]);
   element.style.backgroundColor = bodyBackgroundColor;
 }
+
+// https://stackoverflow.com/questions/29975246/bootstrap-navbar-inherit-a-gradient-color-of-parent
+// Essentially what's going on here is the .navbar gets the same gradient backgorund, and it's position is changed/moved with the window scrolling.
+function updateNavbarColor() {
+  var scr = window.scrollTop;
+  
+}
+
+$(document).ready(function(){
+    $(window).scroll(function(e){
+        var scr = $(window).scrollTop();
+        $('.navbar').css('background-position', '0px -'+ scr+'px');
+    });    
+});

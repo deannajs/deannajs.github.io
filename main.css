@@ -58,8 +58,13 @@ body {
     position: fixed;
     text-align: right;
     width: 100%;
-    background-color: bisque;
+    /* background-color: bisque; */
     top: 0px;
+    background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
+
+    background-repeat:no-repeat;
+    /* background-position:top; */
+    /* background-size:auto 1000px; */
 }
 
 nav a {
