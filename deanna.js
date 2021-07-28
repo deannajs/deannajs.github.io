@@ -17,7 +17,16 @@ function updateScrollProgress() {
 function scrollToId(idName) {
   var element = document.getElementById(idName);
   var headerOffset = document.getElementById("navbar").offsetHeight;
-  var elementPosition = element.offsetTop;
+
+  // find offset from top of page by going through offsetParent
+  var elementPosition = 0;
+  var curr_element = element;
+  var offsetFromParent = curr_element.offsetParent;
+  while (offsetFromParent > 0) {
+    elementPosition += offsetFromParent;
+    curr_element = curr_element.parentElement;
+    offsetFromParent = curr_element.offsetParent;
+  }
   var offsetPosition = elementPosition - headerOffset;
 
   window.scrollTo({top: offsetPosition, behavior: "smooth"});
