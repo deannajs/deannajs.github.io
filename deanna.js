@@ -44,10 +44,22 @@ function updateBackgroundColor() {
 // Essentially what's going on here is the .navbar gets the same gradient backgorund, and it's position is changed/moved with the window scrolling.
 function updateNavbarColor() {
   // get current position from top
-  var scr = window.scrollTop;
+  var scr = getScrollTop();
   console.log("scr is ", scr);
   var navbar = document.getElementById('navbar');
   navbar.backgroundPosition = scr + "px";
   console.log("backgroundposition is ", navbar.backgroundPosition)
 
+}
+
+function getScrollTop(){
+  if(typeof pageYOffset != 'undefined') {
+    return pageYOffset;
+  }
+  else {
+    var B = document.body;
+    var D = document.documentElement;
+    D = (D.clientHeight) ? D : B;
+    return D.scrollTop;
+  }
 }
