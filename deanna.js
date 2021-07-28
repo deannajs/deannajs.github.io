@@ -45,6 +45,7 @@ function updateBackgroundColor() {
 function updateNavbarColor() {
   // get current position from top
   var scr = window.scrollTop;
+  console.log("scr is ", scr);
   var navbar = document.getElementById('navbar');
   navbar.backgroundPosition = scr + "px";
   console.log("backgroundposition is ", navbar.backgroundPosition)
