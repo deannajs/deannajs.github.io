@@ -32,6 +32,9 @@ function scrollToId(idName) {
   window.scrollTo({top: offsetPosition, behavior: "smooth"});
 }
 
+function scrollToTop() {
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
 function updateBackgroundColor() {
   var element = document.getElementById("navbar");
   var bodyBackgroundColor = window.getComputedStyle(document.body, null).getPropertyValue('background');
