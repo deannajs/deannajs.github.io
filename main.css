@@ -119,7 +119,7 @@ nav a:hover {
 }
 
 #resume_button {
-    font-family: Autumn Chant;
+    font-family: Roboto Slab;
 }
 
 /* text & images */ 
@@ -135,7 +135,7 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: Silent Caroline;
+    font-family: Autumn Chant;
     color: black;
     font-weight: bold;
     /* margin: 10%; */
