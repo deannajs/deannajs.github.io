@@ -60,7 +60,7 @@ body {
     width: 100%;
     /* background-color: bisque; */
     top: 0px;
-    background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
+    background: -webkit-linear-gradient(top, bisque, #fff4e6);
 
     background-repeat:no-repeat;
     background-position:top; 
