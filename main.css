@@ -140,6 +140,11 @@ nav a:hover {
 
 #resume_button {
     font-family: Roboto Slab;
+    background-color: bisque;
+    border: none;
+    font-size: 110%;
+    padding: 5%;
+    border-radius: 2%;
 }
 
 /* text & images */ 
