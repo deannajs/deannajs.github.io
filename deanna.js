@@ -20,8 +20,8 @@ function scrollToId(idName) {
   var headerOffset = document.getElementById("navbar").offsetHeight;
 
   // find offset from top of page
-  var elementPosition = element.getBoundingClientRect().top + window.scrollY;
-
+  // var elementPosition = element.getBoundingClientRect().top + window.scrollY;
+  var elementPosition = getScrollTop() + window.scrollY;
   var offsetPosition = elementPosition - headerOffset;
 
   window.scrollTo({top: offsetPosition, behavior: "smooth"});
