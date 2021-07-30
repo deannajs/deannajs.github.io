@@ -67,24 +67,19 @@ function getScrollTop(){
 
 function typing() {
   console.log('typing got called!')
-  var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
-  var idx = 0;
-  while(1){
-    var str = strings[idx];
-    setInterval(replaceAboutMeText(str), 5000);
-    if (idx == strings.length) {
-      idx = 0;
-    } else {
-      idx += 1;
-    }
-  }
+
+  setTimeout(replaceAboutMeText(str), 5000);
 }
 
 function replaceAboutMeText(str){ 
   var content = document.getElementById('typing');
   content.innerHTML = "";
-  content.innerHTML = str;
-  console.log('changed innerHTML to ', str)
+  var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
+  for (var i =0; i < SVGStringList.length; i++) {
+    var str = strings[i];
+    content.innerHTML = str;
+    console.log('changed innerHTML to ', str)
+  }
 }
 // $(document).ready(function(){
 //   $(window).scroll(function(e){
