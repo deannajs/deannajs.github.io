@@ -64,9 +64,23 @@ function getScrollTop(){
   }
 }
 
+function typing() {
+  var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts" "nintendo games","watching cafe vlogs"]
+  for (let i=0; i < strings.length; i++){
+    var str = strings[i];
+    setInterval(replaceAboutMeText(str), 5000);
+  }
+}
+
+function replaceAboutMeText(str){ 
+  var content = document.getElementById('typing');
+  content.innerHTML = "";
+  content.innerHTML = str;
+}
 // $(document).ready(function(){
 //   $(window).scroll(function(e){
 //       var scr = $(window).scrollTop();
 //       $('#navbar').css('background-position', '0px -'+ scr+'px');
 //   });    
 // });
+
