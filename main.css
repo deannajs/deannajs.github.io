@@ -186,6 +186,10 @@ footer {
     right: 29%;
 }
 
+.gudetama-container {
+    padding: 2%;
+}
+
 #gudetama_gif {
     position: absolute;
     max-width: 20%;
