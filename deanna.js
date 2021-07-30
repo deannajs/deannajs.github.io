@@ -5,7 +5,7 @@ window.onload = function() {
 window.onscroll = function() {
   updateScrollProgress();
   // updateBackgroundColor();
-  updateNavbarColor();
+//  updateNavbarColor();
 }
 
 function updateScrollProgress() {
@@ -66,6 +66,6 @@ function getScrollTop(){
 $(document).ready(function(){
   $(window).scroll(function(e){
       var scr = $(window).scrollTop();
-      $('.navbar').css('background-position', '0px -'+ scr+'px');
+      $('#navbar').css('background-position', '0px -'+ scr+'px');
   });    
 });

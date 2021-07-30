@@ -54,7 +54,7 @@ body {
 }
 
 #navbar {
-    /* font-family: "Oswald";
+    font-family: "Oswald";
     font-size: 120%;
     position: fixed;
     text-align: right;
@@ -63,12 +63,9 @@ body {
     
     background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
     background-repeat:no-repeat;
-    background-position:top;  */
-
-    background-image:-webkit-linear-gradient(top,#023322,#ffffff); 
-    background-repeat:no-repeat;
-    background-position:top;
+    background-position:top;  
     background-size:auto 1000px;
+	z-index: 9999;
 }
 
 nav a {
