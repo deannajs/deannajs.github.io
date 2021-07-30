@@ -1,5 +1,6 @@
 window.onload = function() {
   // document.getElementById("scroll_button").onclick = scrollToId('about me');
+  typing();
 }
 
 window.onscroll = function() {

@@ -147,6 +147,10 @@ nav a:hover {
     border-radius: 2%;
 }
 
+#resume_button.hover {
+    background-color: #fff4e6;
+}
+
 /* text & images */ 
 
 .section{
