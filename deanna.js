@@ -71,7 +71,7 @@ function typing() {
   setTimeout(replaceAboutMeText(), 5000);
 }
 
-function replaceAboutMeText(str){ 
+function replaceAboutMeText(){ 
   var content = document.getElementById('typing');
   content.innerHTML = "";
   var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
