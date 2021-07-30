@@ -69,6 +69,11 @@ body {
 	z-index: 9999;
 }
 
+.navbar_link {
+    all: unset;
+
+}
+
 nav a {
     text-align: center;
     text-decoration: none;
