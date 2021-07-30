@@ -72,7 +72,7 @@ function typing() {
     var content = document.getElementById('typing');
     content.innerHTML = "";
     var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
-    for (var i =0; i < SVGStringList.length; i++) {
+    for (var i =0; i < strings.length; i++) {
       var str = strings[i];
       content.innerHTML = str;
       console.log('changed innerHTML to ', str)
