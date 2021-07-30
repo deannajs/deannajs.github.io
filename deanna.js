@@ -49,7 +49,7 @@ function updateNavbarColor() {
   // var scr = window.scrollY;
   var navbar = document.getElementById('navbar');
   navbar.backgroundPosition = "0px - " + scr + "px";
-  console.log("backgroundposition is ", navbar.backgroundPosition)
+  // console.log("backgroundposition is ", navbar.backgroundPosition)
 
 }
 
@@ -66,6 +66,7 @@ function getScrollTop(){
 }
 
 function typing() {
+  console.log('typing got called!')
   var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts" "nintendo games","watching cafe vlogs"]
   for (let i=0; i < strings.length; i++){
     var str = strings[i];
@@ -77,6 +78,7 @@ function replaceAboutMeText(str){
   var content = document.getElementById('typing');
   content.innerHTML = "";
   content.innerHTML = str;
+  console.log('changed innerHTML to ', str)
 }
 // $(document).ready(function(){
 //   $(window).scroll(function(e){
