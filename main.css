@@ -64,7 +64,7 @@ body {
     background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
     background-repeat:no-repeat;
     background-position:top;  
-    background-size:auto auto;
+    background-size:100% 50%;
 	z-index: 9999;
 }
 
