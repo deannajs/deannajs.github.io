@@ -74,6 +74,8 @@ function typing() {
     setInterval(replaceAboutMeText(str), 5000);
     if (idx == strings.length) {
       idx = 0;
+    } else {
+      idx += 1;
     }
   }
 }
