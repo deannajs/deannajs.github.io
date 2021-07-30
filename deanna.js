@@ -67,7 +67,7 @@ function getScrollTop(){
 
 function typing() {
   console.log('typing got called!')
-  var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts" "nintendo games","watching cafe vlogs"]
+  var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
   for (let i=0; i < strings.length; i++){
     var str = strings[i];
     setInterval(replaceAboutMeText(str), 5000);
