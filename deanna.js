@@ -68,7 +68,7 @@ function getScrollTop(){
 function typing() {
   console.log('typing got called!')
 
-  setTimeout(replaceAboutMeText(str), 5000);
+  setTimeout(replaceAboutMeText(), 5000);
 }
 
 function replaceAboutMeText(str){ 
