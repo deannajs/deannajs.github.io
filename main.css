@@ -71,7 +71,10 @@ body {
 
 .navbar_link {
     all: unset;
+}
 
+.navbar_link:hover {
+    color: darkgrey;
 }
 
 nav a {
