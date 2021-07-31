@@ -83,8 +83,10 @@ function typewrite(str) {
     content.innerHTML = "";
     content.innerHTML = str;
     console.log("set innerHTML to ", str);
-  }, 5000)
+  }, 1000)
 }
+
+
 // $(document).ready(function(){
 //   $(window).scroll(function(e){
 //       var scr = $(window).scrollTop();
