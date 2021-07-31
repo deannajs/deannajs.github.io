@@ -88,7 +88,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
         // backspace
         setTimeout(function() {
           backspace(curString, curStrPos);
-        }, 100);
+        }, 30);
 
         // check if this is the last string in the array
         if (curStringIdx == strings.length-1) {
@@ -107,7 +107,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
       // loop the function
       typewrite(strings, curStringIdx, curStrPos);
     })
-  }, 100)
+  }, 30)
 }
 
 function backspace(curString, curStrPos){ 
