@@ -101,7 +101,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
         }
       } else {
         // add the next char into the existing string
-        content.innerHTML = curString.substr(0, curStrPos + 1);
+        content.innerHTML = curString[0,curStrPos + 1];
 
         // add one char at a time
         curStrPos++;
