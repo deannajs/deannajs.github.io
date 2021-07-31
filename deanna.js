@@ -107,7 +107,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
         curStrPos++;
 
         // loop the function
-        typewrite(curString, curStrPos);
+        typewrite(strings, curStringIdx, curStrPos);
       }
     })
   }, 1000)
