@@ -87,8 +87,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // backspace
         setTimeout(function() {
-          curStringIdx = backspace(strings, curStringIdx, curStrPos);
-          curStrPos = 0;
+          backspace(strings, curStringIdx, curStrPos);
         }, 30);
 
       } else {
@@ -120,7 +119,7 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-        return curStringIdx;
+        typewrite(strings, curStringIdx, 0);
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
