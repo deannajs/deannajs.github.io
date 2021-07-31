@@ -85,13 +85,10 @@ function typewrite(strings, curStringIdx, curStrPos) {
       // check if this is the last char in the curString
       if (curStrPos == curString.length) {
 
-        // // backspace
-        // setTimeout(fuction() { 
-        //   backspace(strings, curStringIdx, curStrPost); 
-        // })
-
-        //TEMPORARY: just erase the html
-        content.innerHTML = "";
+        // backspace
+        setTimeout(function() {
+          backspace(curString, curStrPos);
+        }, 100);
 
         // check if this is the last string in the array
         if (curStringIdx == strings.length-1) {
@@ -110,11 +107,19 @@ function typewrite(strings, curStringIdx, curStrPos) {
       // loop the function
       typewrite(strings, curStringIdx, curStrPos);
     })
-  }, 300)
+  }, 100)
 }
 
-function backspace(strings, curStringIdx, curStrPos){ 
-
+function backspace(curString, curStrPos){ 
+    var content = document.getElementById('typing');
+    
+    if (curStrPos == 0) {
+      return;
+    }
+    
+    content.innerHTML = curString.substr(0, curStrPos + 1);
+    curStrPos--;
+    backspace(curString, curStrPos);
 }
 
 
