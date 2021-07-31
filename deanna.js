@@ -77,12 +77,12 @@ function startTyping() {
 function typewrite(strings, curStringIdx, curStrPos) {
   setTimeout(function() {
     var content = document.getElementById('typing');
-    var curString = strings[curStringIdx];
 
     // timeout for any pause after a character
     setTimeout(function() {
+      var curString = strings[curStringIdx];
+
       // check if this is the last char in the curString
-      console.log("curString = ", curString);
       if (curStrPos == curString.length) {
 
         // // backspace
