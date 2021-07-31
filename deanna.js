@@ -113,13 +113,16 @@ function typewrite(strings, curStringIdx, curStrPos) {
 function backspace(curString, curStrPos){ 
     var content = document.getElementById('typing');
     
-    if (curStrPos == 0) {
-      return;
-    }
-    
-    content.innerHTML = curString.substr(0, curStrPos + 1);
-    curStrPos--;
-    backspace(curString, curStrPos);
+    setTimeout(function() {
+      if (curStrPos == 0) {
+        break;
+      }
+      
+      content.innerHTML = curString.substr(0, curStrPos + 1);
+      curStrPos--;
+      backspace(curString, curStrPos);
+    }, 30)
+
 }
 
 
