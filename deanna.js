@@ -99,6 +99,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
         } else {
           curStringIdx++;
         }
+        curStrPos = 0;
       } else {
         // add the next char into the existing string
         content.innerHTML = curString.substr(0, curStrPos + 1);
