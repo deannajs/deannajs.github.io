@@ -69,15 +69,21 @@ function typing() {
   console.log('typing got called!')
 
   setTimeout(function() {
-    var content = document.getElementById('typing');
-    content.innerHTML = "";
     var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
     for (var i =0; i < strings.length; i++) {
       var str = strings[i];
-      content.innerHTML = str;
-      console.log('changed innerHTML to ', str)
+      typewrite(str)
     }
-  }, 5000);
+  }, 3000);
+}
+
+function typewrite(str) {
+  setTimeout(function() {
+    var content = document.getElementById('typing');
+    content.innerHTML = "";
+    content.innerHTML = str;
+  }, 5000)
+
 }
 // $(document).ready(function(){
 //   $(window).scroll(function(e){
