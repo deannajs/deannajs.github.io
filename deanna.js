@@ -82,6 +82,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
     // timeout for any pause after a character
     setTimeout(function() {
       // check if this is the last char in the curString
+      console.log("curString = ", curString);
       if (curStrPos == curString.length) {
 
         // // backspace
