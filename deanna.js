@@ -110,7 +110,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
       // loop the function
       typewrite(strings, curStringIdx, curStrPos);
     })
-  }, 1000)
+  }, 300)
 }
 
 function backspace(strings, curStringIdx, curStrPos){ 
