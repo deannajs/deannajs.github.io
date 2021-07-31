@@ -119,7 +119,7 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-        return curStringIdx, curStringPos;
+        return curStringIdx, curStrPos;
       }
       
       content.innerHTML = curString.substr(0, curStrPos + 1);
