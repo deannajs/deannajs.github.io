@@ -74,7 +74,7 @@ function typing() {
       var str = strings[i];
       typewrite(str)
     }
-  }, 3000);
+  }, 10000);
 }
 
 function typewrite(str) {
