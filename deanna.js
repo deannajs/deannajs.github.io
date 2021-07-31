@@ -105,10 +105,9 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // add one char at a time
         curStrPos++;
-
-        // loop the function
-        typewrite(strings, curStringIdx, curStrPos);
       }
+      // loop the function
+      typewrite(strings, curStringIdx, curStrPos);
     })
   }, 1000)
 }
