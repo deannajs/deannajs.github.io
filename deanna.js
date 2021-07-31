@@ -1,6 +1,6 @@
 window.onload = function() {
   // document.getElementById("scroll_button").onclick = scrollToId('about me');
-  typing();
+  startTyping();
 }
 
 window.onscroll = function() {
@@ -91,7 +91,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         //TEMPORARY: just erase the html
         content.innerHTML = "";
-        
+
         // check if this is the last string in the array
         if (curStringIdx == strings.length-1) {
           curStringIdx = 0;
