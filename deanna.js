@@ -120,6 +120,7 @@ function backspace(strings, curStringIdx, curStrPos){
           curStringIdx++;
         }
         typewrite(strings, curStringIdx, 0);
+        return;
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
