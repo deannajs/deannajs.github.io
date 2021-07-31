@@ -100,9 +100,12 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
       }
         // loop the function
-        if (!in_backspace) {
-          typewrite(strings, curStringIdx, curStrPos);
+        while(!in_backspace) {
+          // do nothing
         }
+        
+        typewrite(strings, curStringIdx, curStrPos);
+        
     })
   }, 50)
 }
