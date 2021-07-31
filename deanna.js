@@ -115,7 +115,7 @@ function backspace(curString, curStrPos){
     
     setTimeout(function() {
       if (curStrPos == 0) {
-        break;
+        return;
       }
       
       content.innerHTML = curString.substr(0, curStrPos + 1);
