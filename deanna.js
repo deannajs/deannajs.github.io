@@ -87,16 +87,10 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // backspace
         setTimeout(function() {
-          backspace(curString, curStrPos);
+          curStringIdx, curStrPost = backspace(strings, curStringIdx, curStrPos);
         }, 30);
 
-        // check if this is the last string in the array
-        if (curStringIdx == strings.length-1) {
-          curStringIdx = 0;
-        } else {
-          curStringIdx++;
-        }
-        curStrPos = 0;
+
       } else {
         // add the next char into the existing string
         content.innerHTML = curString.substr(0, curStrPos + 1);
@@ -112,12 +106,18 @@ function typewrite(strings, curStringIdx, curStrPos) {
   }, 30)
 }
 
-function backspace(curString, curStrPos){ 
+function backspace(strings, curStringIdx, curStrPos){ 
     var content = document.getElementById('typing');
-    
+    var curString = strings[curStringIdx];
+    // check if this is the last string in the array
+    if (curStringIdx == strings.length-1) {
+      curStringIdx = 0;
+    } else {
+      curStringIdx++;
+    }
     setTimeout(function() {
       if (curStrPos == 0) {
-        return;
+        return curStringIdx, curStringPos;
       }
       
       content.innerHTML = curString.substr(0, curStrPos + 1);
