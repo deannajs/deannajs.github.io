@@ -77,7 +77,7 @@ function startTyping() {
 function typewrite(strings, curStringIdx, curStrPos) {
   setTimeout(function() {
     var content = document.getElementById('typing');
-
+    var in_backspace = false;
     // timeout for any pause after a character
     setTimeout(function() {
       var curString = strings[curStringIdx];
@@ -87,7 +87,8 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // backspace
         setTimeout(function() {
-          backspace(strings, curStringIdx, curStrPos);
+          in_backspace = true;
+          in_backspace = backspace(strings, curStringIdx, curStrPos);
         }, 1000);
 
       } else {
@@ -99,7 +100,9 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
       }
         // loop the function
-        typewrite(strings, curStringIdx, curStrPos);
+        if (!in_backspace) {
+          typewrite(strings, curStringIdx, curStrPos);
+        }
     })
   }, 50)
 }
@@ -118,7 +121,7 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-        return;
+        return 0;
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
