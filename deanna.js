@@ -124,7 +124,7 @@ function backspace(strings, curStringIdx, curStrPos){
       
       content.innerHTML = curString.substr(0, curStrPos + 1);
       curStrPos--;
-      backspace(curString, curStrPos);
+      backspace(strings, curStringIdx, curStrPos);
     }, 30)
 
 }
