@@ -108,15 +108,17 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
 function backspace(strings, curStringIdx, curStrPos){ 
     var content = document.getElementById('typing');
-    var curString = strings[curStringIdx];
-    // check if this is the last string in the array
-    if (curStringIdx == strings.length-1) {
-      curStringIdx = 0;
-    } else {
-      curStringIdx++;
-    }
+
     setTimeout(function() {
+      var curString = strings[curStringIdx];
+
       if (curStrPos == 0) {
+        // check if this is the last string in the array
+        if (curStringIdx == strings.length-1) {
+          curStringIdx = 0;
+        } else {
+          curStringIdx++;
+        }
         return curStringIdx, curStringPos;
       }
       
