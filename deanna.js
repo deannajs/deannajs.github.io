@@ -65,25 +65,55 @@ function getScrollTop(){
   }
 }
 
-function typing() {
+function startTyping() {
   console.log('typing got called!')
 
-  setInterval(function() {
+  setTimeout(function() {
     var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
-    for (var i =0; i < strings.length; i++) {
-      var str = strings[i];
-      typewrite(str)
-    }
-  }, 10000);
+    typewrite(strings, 0, 0);
+  }, 1000);
 }
 
-function typewrite(str) {
-  setInterval(function() {
+function typewrite(strings, curStringIdx, curStrPos) {
+  setTimeout(function() {
     var content = document.getElementById('typing');
-    content.innerHTML = "";
-    content.innerHTML = str;
-    console.log("set innerHTML to ", str);
+    var curString = strings[curStringIdx];
+
+    // timeout for any pause after a character
+    setTimeout(function() {
+      // check if this is the last char in the curString
+      if (curStrPos == curString.length) {
+
+        // // backspace
+        // setTimeout(fuction() { 
+        //   backspace(strings, curStringIdx, curStrPost); 
+        // })
+
+        //TEMPORARY: just erase the html
+        content.innerHTML = "";
+        
+        // check if this is the last string in the array
+        if (curStringIdx == strings.length-1) {
+          curStringIdx = 0;
+        } else {
+          curStringIdx++;
+        }
+      } else {
+        // add the next char into the existing string
+        content.innerHTML = curString.substr(0, curStrPos + 1);
+
+        // add one char at a time
+        curStrPos++;
+
+        // loop the function
+        typewrite(curString, curStrPos);
+      }
+    })
   }, 1000)
+}
+
+function backspace(strings, curStringIdx, curStrPos){ 
+
 }
 
 
