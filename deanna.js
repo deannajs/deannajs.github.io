@@ -87,16 +87,9 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // backspace
         setTimeout(function() {
-          backspace(strings, curStringIdx, curStrPos);
+          curStringIdx = backspace(strings, curStringIdx, curStrPos);
+          curStrPos = 0;
         }, 30);
-
-        // check if this is the last string in the array
-        if (curStringIdx == strings.length-1) {
-          curStringIdx = 0;
-        } else {
-          curStringIdx++;
-        }
-        curStrPos = 0;
 
       } else {
         // add the next char into the existing string
@@ -121,7 +114,13 @@ function backspace(strings, curStringIdx, curStrPos){
 
       if (curStrPos < 0) {
         content.innerHTML = "";
-        return;
+        // check if this is the last string in the array
+        if (curStringIdx == strings.length-1) {
+          curStringIdx = 0;
+        } else {
+          curStringIdx++;
+        }
+        return curStringIdx;
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
