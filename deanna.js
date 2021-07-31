@@ -88,7 +88,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
         // backspace
         setTimeout(function() {
           backspace(strings, curStringIdx, curStrPos);
-        }, 30);
+        }, 1000);
 
       } else {
         // add the next char into the existing string
@@ -123,7 +123,7 @@ function backspace(strings, curStringIdx, curStrPos){
       
       content.innerHTML = curString.substr(0, --curStrPos);
       backspace(strings, curStringIdx, curStrPos);
-    }, 30)
+    }, 50)
 
 }
 
