@@ -82,6 +82,7 @@ function typewrite(str) {
     var content = document.getElementById('typing');
     content.innerHTML = "";
     content.innerHTML = str;
+    console.log("set innerHTML to ", str);
   }, 5000)
 }
 // $(document).ready(function(){
