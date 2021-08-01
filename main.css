@@ -24,6 +24,8 @@
 body {
     background: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
     margin: 0px;
+	background-repeat: no-repeat;
+	height: 1000px;
 }
 
 /* scroll indicator */
@@ -65,7 +67,7 @@ body {
     background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
     background-repeat:no-repeat;
     background-position: 0;  
-    background-size:contain;
+    background-size: auto 1000px;
 	z-index: 9999;
 }
 
