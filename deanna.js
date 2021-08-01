@@ -6,7 +6,7 @@ window.onload = function() {
 window.onscroll = function() {
   updateScrollProgress();
   // updateBackgroundColor();
-  updateNavbarColor();
+//  updateNavbarColor();
 }
 
 function updateScrollProgress() {
@@ -128,10 +128,11 @@ function backspace(strings, curStringIdx, curStrPos){
 }
 
 
-// $(document).ready(function(){
-//   $(window).scroll(function(e){
-//       var scr = $(window).scrollTop();
-//       $('#navbar').css('background-position', '0px -'+ scr+'px');
-//   });    
-// });
+ $(document).ready(function(){
+   $(window).scroll(function(e){
+       var scr = $(window).scrollTop();
+       $('#navbar').css('background-position', '0px -'+ scr+'px');
+	   console.log('scr= ', scr);
+   });    
+ });
 
