@@ -88,6 +88,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
         setTimeout(function() {
           curStringIdx = backspace(strings, curStringIdx, curStrPos);
         }, 1000);
+		  curStrPos = 0;
 
       } else {
         // add the next char into the existing string
