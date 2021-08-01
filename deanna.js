@@ -85,7 +85,9 @@ function typewrite(strings, curStringIdx, curStrPos) {
       if (curStrPos == curString.length) {
 
         // backspace
-        setTimeout(backspace(strings, curStringIdx, curStrPos), 1000);
+        setTimeout(function() {
+			backspace(strings, curStringIdx, curStrPos)
+		}, 1000);
 
       } else {
         // add the next char into the existing string
@@ -93,11 +95,10 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // add one char at a time
         curStrPos++;
-
-      }
+		  
 		// loop the function        
-		setTimeout(typewrite(strings, curStringIdx, curStrPos), 100);
-        
+		typewrite(strings, curStringIdx, curStrPos);
+      }
     }, 50)
   }, 50)
 }
@@ -116,11 +117,13 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-		return [curStringIdx, 0];
+		setTimeout(function() {
+			typewrite(strings, curStringIdx, 0);
+		}, 100)
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
-      setTimeout(backspace(strings, curStringIdx, curStrPos), 100);
+      backspace(strings, curStringIdx, curStrPos);
     }, 50)
 
 }
