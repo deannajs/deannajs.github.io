@@ -117,7 +117,6 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-		
 		typewrite(strings, curStringIdx, 0);
 		return;
       }
