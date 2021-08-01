@@ -117,9 +117,8 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-		setTimeout(function() {
-			typewrite(strings, curStringIdx, 0);
-		}, 100)
+		
+		typewrite(strings, curStringIdx, 0);
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
