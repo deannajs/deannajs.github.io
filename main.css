@@ -59,7 +59,7 @@ body {
     position: fixed;
     text-align: right;
     width: 100%;
-	height: 20%;
+	/* height: 5%; */
     top: 0px;
     
     background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
@@ -188,9 +188,12 @@ footer {
 /* gifs */
 #computer_gif {
     position: absolute;
+/*
     max-width: 8%;
 	min-width: 7%;
-    height: auto;
+*/
+	width: auto;
+    height: 100px;
     bottom: 93%;
     right: 29%;
 }
