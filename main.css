@@ -209,9 +209,9 @@ footer {
 
 #gudetama_img {
 	position: absolute;
-	max-width: 18%;
-	min-width: 18%;
-	height: auto;
+/*	max-width: 200px;*/
+	height: 130px;
+	width: auto;
 	bottom: 90%;
 	left: 44%;
 }
