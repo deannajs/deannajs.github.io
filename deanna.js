@@ -86,9 +86,10 @@ function typewrite(strings, curStringIdx, curStrPos) {
 
         // backspace
         setTimeout(function() {
-          curStringIdx = backspace(strings, curStringIdx, curStrPos);
+          var temp = backspace(strings, curStringIdx, curStrPos);
         }, 1000);
-		  curStrPos = 0;
+		  curStringIdx = temp[0];
+		  curStrPos = temp[1];
 
       } else {
         // add the next char into the existing string
@@ -119,7 +120,7 @@ function backspace(strings, curStringIdx, curStrPos){
         } else {
           curStringIdx++;
         }
-		return curStringIdx;
+		return [curStringIdx, 0];
       }
       
       content.innerHTML = curString.substr(0, --curStrPos);
