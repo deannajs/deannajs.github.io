@@ -85,17 +85,7 @@ function typewrite(strings, curStringIdx, curStrPos) {
       if (curStrPos == curString.length) {
 
         // backspace
-        setTimeout(function() {
-          var temp = backspace(strings, curStringIdx, curStrPos);
-        }, 1000);
-		  while (true) {
-			  if (typeof temp !== 'undefined') {
-				  break;
-			  }
-			  // wait until temp is defined
-		  }
-		  curStringIdx = temp[0];
-		  curStrPos = temp[1];
+        setTimeout(backspace(strings, curStringIdx, curStrPos), 1000);
 
       } else {
         // add the next char into the existing string
