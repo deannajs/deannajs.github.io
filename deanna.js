@@ -88,7 +88,10 @@ function typewrite(strings, curStringIdx, curStrPos) {
         setTimeout(function() {
           var temp = backspace(strings, curStringIdx, curStrPos);
         }, 1000);
-		  while (typeof temp === 'undefined') {
+		  while (true) {
+			  if (typeof temp !== 'undefined') {
+				  break;
+			  }
 			  // wait until temp is defined
 		  }
 		  curStringIdx = temp[0];
