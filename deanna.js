@@ -6,10 +6,11 @@ window.onload = function() {
 
   var height = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
                         document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-
-  document.getElementById("navbar").style.backgroundSize = "100% " + height + "px";
+  var navbar = document.getElementById('navbar');
+  navbar.style.backgroundSize = "100% " + height + "px";
   console.log(navbar.style.backgroundSize);
   console.log(window.innerHeight);
+  console.log(navbar.offsetHeight);
 }
 
 window.onscroll = function() {
