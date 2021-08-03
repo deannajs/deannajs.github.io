@@ -8,6 +8,8 @@ window.onload = function() {
                         document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
 
   document.getElementById("navbar").style.backgroundSize = "100% " + height + "px";
+  console.log(navbar.style.backgroundSize);
+  console.log(window.innerHeight);
 }
 
 window.onscroll = function() {
@@ -46,6 +48,7 @@ function updateNavbarColor() {
 	
   var navbar = document.getElementById('navbar');
   navbar.style.backgroundPosition = "0px -" + scr + "px";
+  console.log(navbar.style.backgroundPosition);
 }
 
 function getScrollTop(){
