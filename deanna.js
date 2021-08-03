@@ -2,6 +2,7 @@ window.onload = function() {
   // document.getElementById("scroll_button").onclick = scrollToId('about me');
   startTyping();
   document.getElementById("navbar").style.backgroundSize = "100% " + document.height + "px";
+  console.log(document.height);
 }
 
 window.onscroll = function() {
