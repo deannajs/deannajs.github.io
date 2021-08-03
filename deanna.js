@@ -1,5 +1,5 @@
 window.onload = function() {
-  startTyping();
+  // startTyping();
 
   var body = document.body,
       html = document.documentElement;
