@@ -61,7 +61,7 @@ body {
     width: 100%;
     top: 0px;
     
-    background-image: -webkit-linear-gradient(top, bisque, #fff4e6);
+    background-image: -webkit-linear-gradient(top, bisque 100vh, #fff4e6 120vh);
     background-repeat:no-repeat;
     /* background-position: top;
 	background-size: auto 1000px; */
