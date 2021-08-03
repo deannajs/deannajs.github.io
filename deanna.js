@@ -1,8 +1,14 @@
 window.onload = function() {
   // document.getElementById("scroll_button").onclick = scrollToId('about me');
   startTyping();
-  document.getElementById("navbar").style.backgroundSize = "100% " + document.height + "px";
-  console.log(document.height);
+
+  var body = document.body,
+      html = document.documentElement;
+
+  var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                        html.clientHeight, html.scrollHeight, html.offsetHeight );
+  document.getElementById("navbar").style.backgroundSize = "100% " + height + "px";
+  console.log(document.style.height);
 }
 
 window.onscroll = function() {
