@@ -1,17 +1,13 @@
 window.onload = function() {
-  // document.getElementById("scroll_button").onclick = scrollToId('about me');
   startTyping();
 
   var body = document.body,
       html = document.documentElement;
 
-  var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-  var headerOffset = document.getElementById("navbar").offsetHeight;
+  var height = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+                        document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
 
-  height = height - window.innerHeight + headerOffset;
   document.getElementById("navbar").style.backgroundSize = "100% " + height + "px";
-  console.log(window.innerHeight);
 }
 
 window.onscroll = function() {
