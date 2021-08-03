@@ -7,9 +7,11 @@ window.onload = function() {
 
   var height = Math.max( body.scrollHeight, body.offsetHeight, 
                         html.clientHeight, html.scrollHeight, html.offsetHeight );
-  height = height - window.innerHeight;
+  var headerOffset = document.getElementById("navbar").offsetHeight;
+
+  height = height - window.innerHeight + headerOffset;
   document.getElementById("navbar").style.backgroundSize = "100% " + height + "px";
-  console.log(document.style.height);
+  console.log(window.innerHeight);
 }
 
 window.onscroll = function() {
