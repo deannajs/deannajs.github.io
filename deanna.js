@@ -37,10 +37,9 @@ function scrollToTop() {
 function updateNavbarColor() {
   // get current position from top
   var scr = document.body.scrollTop || document.documentElement.scrollTop;
-  console.log('scr = ', scr);
 	
   var navbar = document.getElementById('navbar');
-  navbar.backgroundPosition = "0px -" + scr + "px";
+  navbar.style.backgroundPosition = "0px -" + scr + "px";
   console.log('navbar bg pos = ', navbar.backgroundPosition);
   // console.log("backgroundposition is ", navbar.backgroundPosition)
 
