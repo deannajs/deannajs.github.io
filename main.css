@@ -210,12 +210,13 @@ footer {
 }
 
 #gudetama_img {
-	position: absolute;
+	position: fixed;
 /*	max-width: 200px;*/
 	height: 130px;
 	width: auto;
 	bottom: 90%;
 	left: 44%;
+    transform: translate(-50%, -50%);
 }
 
 #camera_gif {
