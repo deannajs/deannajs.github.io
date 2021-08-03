@@ -40,8 +40,6 @@ function updateNavbarColor() {
 	
   var navbar = document.getElementById('navbar');
   navbar.style.backgroundPosition = "0px -" + scr + "px";
-  console.log('navbar bg pos = ', navbar.style.backgroundPosition);
-
 }
 
 function getScrollTop(){
