@@ -40,8 +40,7 @@ function updateNavbarColor() {
 	
   var navbar = document.getElementById('navbar');
   navbar.style.backgroundPosition = "0px -" + scr + "px";
-  console.log('navbar bg pos = ', navbar.backgroundPosition);
-  // console.log("backgroundposition is ", navbar.backgroundPosition)
+  console.log('navbar bg pos = ', navbar.style.backgroundPosition);
 
 }
 
