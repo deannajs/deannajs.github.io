@@ -186,6 +186,10 @@ footer {
 
 /* gifs */
 
+.banner_gifs {
+    position: relative;
+}
+
 #gudetama_img {
 	display: block;
     margin-left: auto;
@@ -193,38 +197,32 @@ footer {
     height: 130px;
 }
 #computer_gif {
-    /* position: absolute;
+    position: absolute;
 	width: auto;
     height: 100px;
     bottom: 93%;
-    right: 29%; */
+    right: 29%;
 }
 
 #camera_gif {
-    /* position: absolute;
+    position: absolute;
     max-width: 10%;
 	min-width: 10%;
     height: auto;
 	bottom: 95%;
-    left: 33%; */
+    left: 33%;
 }
 
 #musicnote_gif {
-    /* position: absolute;
-    max-width: 4%;
-	min-width: 4%;
-    height: auto;
-    bottom: 97%;
-    right: 24%; */
+    position: absolute;
+    width: 60px;
 }
 
 #journal_gif {
-    /* position: absolute;
-    max-width: 5%;
-	min-width: 5%;
+    position: absolute;
+    width: 90px;
     height: auto;
-    bottom: 93%;
-    left: 27%; */
+    margin-left: -30%;
 }
 
 
