@@ -46,8 +46,8 @@ body {
 /* navigation bar */
 #logo {
 	left: 0;
-	width: 6%;
-	margin: 1%;
+	height: 40px;
+	margin: 10px;
 	top: 0;
 	position: fixed;
 	transform: rotate(28deg);
@@ -210,13 +210,10 @@ footer {
 }
 
 #gudetama_img {
-	position: fixed;
-/*	max-width: 200px;*/
-	height: 130px;
-	width: auto;
-	bottom: 90%;
-	left: 44%;
-    transform: translate(-50%, -50%);
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px;
 }
 
 #camera_gif {
