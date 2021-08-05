@@ -200,28 +200,30 @@ footer {
     position: absolute;
 	width: auto;
     height: 100px;
-    bottom: 93%;
-    right: 29%;
+    margin-left: 730px;
+    margin-top: -80px;
 }
 
 #camera_gif {
     position: absolute;
     width: 130px;
     height: auto;
-	bottom: 95%;
-    left: 33%;
+    margin-left: 480px;
+    margin-top: -60px;
 }
 
 #musicnote_gif {
     position: absolute;
     width: 60px;
+    margin-left: 20px;
 }
 
 #journal_gif {
     position: absolute;
     width: 90px;
     height: auto;
-    margin-left: -30%;
+    margin-left: 240px;
+    margin-top: -70px;
 }
 
 
