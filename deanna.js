@@ -8,6 +8,8 @@ window.onload = function() {
                         document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
   var navbar = document.getElementById('navbar');
   navbar.style.backgroundSize = "100% " + height + "px";
+
+  document.getElementById('scroll_button').marginTop 
 }
 
 window.onscroll = function() {
@@ -29,9 +31,14 @@ function scrollToId(idName) {
   // find offset from top of page
   var elementPosition = element.getBoundingClientRect().top + window.scrollY;
 
-  var offsetPosition = elementPosition - headerOffset;
+  // find size of window
+  var windowHeight = window.innerHeight;
+  var elementHeight = element.outerHeight(true);
 
-  window.scrollTo({top: offsetPosition, behavior: "smooth"});
+  // calculate position to scroll to
+  var offsetPosition = elementPosition - headerOffset - (windowHeight - );
+
+  window.scrollTo({top: offsetPosition, behavior: "smooth", inline: 'center', block: 'center'});
 }
 
 function scrollToTop() {
