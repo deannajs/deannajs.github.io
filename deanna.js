@@ -33,10 +33,10 @@ function scrollToId(idName) {
 
   // find size of window
   var windowHeight = window.innerHeight;
-  var elementHeight = element.outerHeight(true);
+  var elementHeight = $(element).outerHeight(true)
 
   // calculate position to scroll to
-  var offsetPosition = elementPosition - headerOffset - (windowHeight - );
+  var offsetPosition = elementPosition - headerOffset - (windowHeight - elementHeight) / 2;
 
   window.scrollTo({top: offsetPosition, behavior: "smooth", inline: 'center', block: 'center'});
 }
