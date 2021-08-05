@@ -216,6 +216,7 @@ footer {
     position: absolute;
     width: 60px;
     margin-left: 20px;
+    margin-top: -50px;
 }
 
 #journal_gif {
