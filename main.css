@@ -137,7 +137,8 @@ nav a:hover {
 }
 
 #resume_button {
-    font-family: Roboto Slab;
+    font-family: Oswald;
+    font-weight: 300;
     background-color: bisque;
     border: none;
     font-size: 110%;
@@ -153,7 +154,7 @@ nav a:hover {
 
 .section{
     font-family: Oswald;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 105%;
     padding: 8%;
     margin-top: 13%;
