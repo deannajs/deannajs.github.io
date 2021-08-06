@@ -33,6 +33,10 @@
     src: url("fonts/LemonTea.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "TingTong";
+    src: url("fonts/TingTong.ttf") format("truetype");
+}
 
 
 
@@ -186,10 +190,9 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: Herliana;
+    font-family: TingTong;
     color: black;
-    font-weight: bold;
-    /* margin: 10%; */
+    letter-spacing: 2px;
 }
 
 #mini-footer {
