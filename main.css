@@ -148,8 +148,9 @@ nav a:hover {
     border-radius: 2%;
 }
 
-#resume_button.hover {
+#resume_button:hover {
     background-color: #fff4e6;
+    color: darkgrey;
 }
 
 /* text & images */ 
@@ -174,7 +175,9 @@ nav a:hover {
     /* margin: 10%; */
 }
 
-
+#mini-footer {
+    padding: 8%;
+}
 .profilepic {
     height: 30%;
     width: 20%;
