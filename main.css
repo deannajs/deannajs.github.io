@@ -167,6 +167,9 @@ nav a:hover {
     font-size: 110%;
     padding: 3px;
     border-radius: 2%;
+}
+
+#resume_link {
     text-decoration: none;
 }
 
