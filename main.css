@@ -18,6 +18,23 @@
     src: url("fonts/Silent\ Caroline.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Herliana";
+    src: url("fonts/Herliana.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Herliana Bold";
+    src: url("fonts/HerlianaBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LemonTea";
+    src: url("fonts/LemonTea.otf") format("opentype");
+}
+
+
+
 
 
 /* background colors */
@@ -169,7 +186,7 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: Autumn Chant;
+    font-family: Herliana;
     color: black;
     font-weight: bold;
     /* margin: 10%; */
