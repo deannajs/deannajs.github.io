@@ -209,6 +209,10 @@ nav a:hover {
     margin-left: 16%;
 }
 
+#flower_gif {
+    height: 25%;
+}
+
 footer {
     font-family: Silent Caroline;
     text-align: center;
