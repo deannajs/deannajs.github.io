@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
 <!-- Load jQuery -->
 <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
@@ -20,7 +21,7 @@
         <div class="progress-bar" id="myBar"></div>
     </div>
 	<button id="home_button" onclick="scrollToTop()"> <img src="assets/logo.png" id="logo"></button> 
-    <button class = "navbar_link" onclick="scrollToId('about')">about</button>
+    <a href="javascript:void()" onclick="scrollToId('about me')">about me</button>
     <a href="javascript:void()" onclick="scrollToId('skills')">skills</a>
     <a href="javascript:void()" onclick="scrollToId('projects')">projects</a>
     <a href="javascript:void()" onclick="scrollToId('contact')">contact</a>
@@ -41,7 +42,7 @@
     </span>
 <!--    <img src="assets/gudetama.gif" id="gudetama_gif">-->
 	<div class = "gudetama-container"><img src="assets/gudetama.png" id="gudetama_img"></div>
-    <button id="scroll_button" onclick="scrollToId('about')">╲╱</button>
+    <button id="scroll_button" onclick="scrollToId('about me')">╲╱</button>
 </div>
 
 
@@ -50,16 +51,21 @@
     <img src="assets/flower.gif">
 
     <div class="section">
-        <span class="section_header" id="about">hi there! <br><br> </span>
+        <span class="section_header" id="about me">hi there!<br><br> </span>
 
-        My name is Deanna and I graduated from the University of Michigan with a BSE in Computer Science and a minor in Music in Spring 2020.
-
-        I love ... <div id="typing"></div>
+        <div>
+        My name is Deanna and I graduated from the University of Michigan with a BSE in Computer Science and a minor in Music.
+        <br><br>
+        I really like <span id="typing"></span>|
+        </div>
         
-
-        <a href="https://drive.google.com/file/d/1ZkSacozAPlv7f8XZGjBOE6U5PAUNyjGh/view?usp=sharing" target="_blank">
-            <button type="button" id="resume_button">Resumé</button>
-        </a>
+        <div id = "mini-footer">
+        <br>
+        Have a 'lil peek at my
+        <a href="https://drive.google.com/file/d/1ZkSacozAPlv7f8XZGjBOE6U5PAUNyjGh/view?usp=sharing" target="_blank" id="resume_link">
+            <button type="button" id="resume_button">resumé</button>
+        </a> !
+        </div>
         <br><br>
     </div>
     
@@ -68,11 +74,10 @@
     
     <div class="section">
         <span class="section_header" id="skills">skills<br><br> </span>
-        video game development, machine learning, web systems<br>
         programming languages: c/c++/c#, python, MATLAB, HTML/CSS, Verilog, Javascript, Swift <br>
-        tools: git/github, docker<br>
-        software: Unity, Solidworks<br>
+        software: Unity, Solidworks, Dreamweaver, Premiere<br>
         foreign languages: mandarin chinese, french, japanese, korean
+        currently learning: docker, blender
         <br><br>
     </div>
 
@@ -80,16 +85,40 @@
     <br style="clear:both" />
     <div class="section">
         <span class="section_header" id="projects">projects <br><br> </span>
+        [in progress] <br>
+        Video Game Portfolio Website<br>
+        built with: HTML/CSS, Javascript <br><br>
+        
         Personal Website <br>
         built with: HTML/CSS, Javascript <br><br>
 
-        Video Game Portfolio Website<br>
-        built with: HTML/CSS, Javascript <br>
-        built three games: remastered Legend of Zelda, mini game, collaborative game <br><br>
+        Ghost Hosts<br>
+        built with: C# + Unity<br>
+        escape haunted house <br><br>
         
+        Conveyor Cat<br>
+        built with: C# + Unity<br>
+        feed the cats sushi <br><br>
+
+        Legend of Zelda <br>
+        built with: C# + Unity <br>
+        the NES legend of zelda game, remastered <br><br>
+
         EZscan <br>
         built with: swift <br>
-        a mobile app that detects, crops, and stores barcodes from pictures of gift cards into a virtual wallet
+        a mobile app that detects, crops, and stores barcodes from pictures of gift cards into a virtual wallet <br><br>
+    
+        movie selector <br>
+        built with: python <br>
+        from eecs 445 <br><br>
+
+        OS library <br>
+        built with: C++ <br>
+        from eecs 482 <br><br>
+
+        insta485 <br>
+        built with: HTML/CSS, Javascript/jQuery, SQL, python <br>
+        from eecs 485 <br><br>
     </div>
 
     <div class="section">

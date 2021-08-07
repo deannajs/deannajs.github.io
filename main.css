@@ -18,6 +18,27 @@
     src: url("fonts/Silent\ Caroline.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Herliana";
+    src: url("fonts/Herliana.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Herliana Bold";
+    src: url("fonts/HerlianaBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LemonTea";
+    src: url("fonts/LemonTea.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "TingTong";
+    src: url("fonts/TingTong.ttf") format("truetype");
+}
+
+
 
 
 /* background colors */
@@ -137,7 +158,10 @@ nav a:hover {
 }
 
 #resume_button {
-    font-family: Roboto Slab;
+    font-family: Oswald;
+    font-weight: 300;
+    letter-spacing: 1px;
+
     background-color: bisque;
     border: none;
     font-size: 110%;
@@ -145,15 +169,23 @@ nav a:hover {
     border-radius: 2%;
 }
 
-#resume_button.hover {
+#resume_link {
+    text-decoration: none;
+}
+
+#resume_button:hover {
     background-color: #fff4e6;
+    color: darkgrey;
 }
 
 /* text & images */ 
 
 .section{
     font-family: Oswald;
-    font-size: 105%;
+    font-weight: 300;
+    font-size: 110%;
+    letter-spacing: 1px;
+
     padding: 8%;
     margin-top: 13%;
     margin-bottom: 13%;
@@ -163,16 +195,13 @@ nav a:hover {
 
 .section_header {
     font-size: 180%;
-    font-family: Autumn Chant;
+    font-family: TingTong;
     color: black;
-    font-weight: bold;
-    /* margin: 10%; */
 }
 
-
 .profilepic {
-    height: 30%;
-    width: 20%;
+    height: 25%;
+    width: 15%;
     padding: 5%;
     margin-top: 13%;
     border-radius: 50%; 

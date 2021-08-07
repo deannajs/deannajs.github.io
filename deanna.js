@@ -35,7 +35,7 @@ function scrollToId(idName) {
   var windowHeight = window.innerHeight;
 
   // calculate position to scroll to
-  var offsetPosition = elementPosition - headerOffset - windowHeight / 3;
+  var offsetPosition = elementPosition - headerOffset - windowHeight / 4;
 
   window.scrollTo({top: offsetPosition, behavior: "smooth", inline: 'center', block: 'center'});
 }
@@ -68,7 +68,7 @@ function getScrollTop(){
 
 function startTyping() {
   setTimeout(function() {
-    var strings = ["playing piano & cello", "bell towers" ,"film photography" ,"bullet journaling" ,"cute stationery", "pigs" ,"anime and kdramas" ,"jamming out to music", "zoning out" ,"gudetama", "psyduck" ,"emptying my head of thoughts", "nintendo games","watching cafe vlogs"]
+    var strings = ["playing piano & cello...", "bell towers..." ,"film photography..." ,"bullet journaling..." ,"cute stationery...", "pigs..." ,"binge watching tv shows..." ,"jamming out to music in the car...", "zoning out..." ,"gudetama...", "psyduck..." ,"emptying my head of thoughts...", "nintendo games...","watching cafe vlogs..."]
     typewrite(strings, 0, 0);
   }, 1000);
 }
