@@ -209,8 +209,15 @@ nav a:hover {
     margin-left: 16%;
 }
 
+.flower_divider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #flower_gif {
-    height: 25%;
+    height: 25px;
+    width: 25px;
 }
 
 footer {
