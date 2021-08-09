@@ -68,7 +68,7 @@ function getScrollTop(){
 
 function startTyping() {
   setTimeout(function() {
-    var strings = ["playing piano & cello...", "bell towers..." ,"film photography..." ,"bullet journaling..." ,"cute stationery...", "pigs..." ,"binge watching tv shows..." ,"jamming out to music in the car...", "zoning out..." ,"gudetama...", "psyduck..." ,"emptying my head of thoughts...", "nintendo games...","watching cafe vlogs..."]
+    var strings = ["playing piano & cello...", "bell towers..." ,"film photography..." ,"bullet journaling + cute stationery...", "pigs :(:)..." ,"binge watching tv shows..." , "emptying my head of thoughts...", "nintendo games...", "watching cafe vlogs..."]
     typewrite(strings, 0, 0);
   }, 1000);
 }
