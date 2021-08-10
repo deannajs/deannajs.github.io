@@ -237,6 +237,15 @@ footer {
     margin-bottom: 50px;
 }
 
+.skills_title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills_list {
+    padding: 5px;
+}
+
 /* projects */
 .projects_container {
     display: grid;
@@ -250,7 +259,7 @@ footer {
     width: 300px;
     height: 300px;
     margin-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .project_box:hover {
@@ -260,6 +269,16 @@ footer {
 .project_link{
     text-decoration: none;
 }
+
+.project_title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.project_description {
+    padding: 5px;
+}
+
 /* gifs */
 
 .banner_gifs {
