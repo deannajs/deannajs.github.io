@@ -266,8 +266,9 @@ footer {
 	opacity: 0.5;
 }
 
-.project_link{
+.project_link, .project_link:hover, .project_link:visited, .project_link:active {
     text-decoration: none;
+    color: inherit;
 }
 
 .project_title {
