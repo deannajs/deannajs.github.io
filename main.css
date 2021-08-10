@@ -267,6 +267,7 @@ footer {
 .project_link, .project_link:hover, .project_link:visited, .project_link:active {
     text-decoration: none;
     color: inherit;
+    display: flex;
 }
 
 .project_title {
@@ -276,6 +277,8 @@ footer {
 
 .project_subtitle {
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .project_description {
