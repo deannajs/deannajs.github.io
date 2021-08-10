@@ -227,11 +227,13 @@ footer {
 .projects_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* .project_box {
-
-} */
+.project_box {
+    background-color: bisque;
+    border-radius: 50px;
+}
 
 
 /* gifs */
