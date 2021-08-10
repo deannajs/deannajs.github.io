@@ -245,10 +245,25 @@ footer {
     text-align: center;
 }
 
+.skills_expand_button {
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.skills_expand_button:hover {
+    color: darkgray;
+}
 /* skills smaller */
 .skills_smaller_container {
     display: grid;
     grid-row: 1;
+    display: flex;
 }
 
 .skills_smaller_box {
@@ -257,12 +272,37 @@ footer {
 }
 
 .skills_left_button {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: black;
 }
 
-.skills_right_button {
-    transform: rotate(90deg);
+.skills_left_button:hover {
+    color: darkgray;
 }
+
+
+.skills_right_button {
+    transform: rotate(-90deg);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.skills_right_button:hover {
+    color: darkgray;
+}
+
 /* projects */
 .projects_container {
     display: grid;
