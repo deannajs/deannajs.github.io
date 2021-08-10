@@ -223,6 +223,18 @@ footer {
     text-align: center;
 }
 
+/* skills */
+
+.skills_container {
+    display: grid;
+    grid-template-columns: 100% 1fr;
+}
+
+.skills_box {
+    background-color: bisque;
+    border-radius: 12px;
+}
+
 /* projects */
 .projects_container {
     display: grid;
