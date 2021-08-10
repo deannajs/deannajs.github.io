@@ -126,7 +126,7 @@ function backspace(strings, curStringIdx, curStrPos){
 
 }
 
-function expandSkillsBox() {
-  console.log('hi');
+function expandSkillsBox(this) {
+  console.log(this);
 }
 
