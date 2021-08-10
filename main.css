@@ -245,6 +245,24 @@ footer {
     text-align: center;
 }
 
+/* skills smaller */
+.skills_smaller_container {
+    display: grid;
+    grid-row: 1;
+}
+
+.skills_smaller_box {
+    background-color: #fff4e6;
+    border-radius: 12px;
+}
+
+.skills_left_button {
+    transform: rotate(-90deg);
+}
+
+.skills_right_button {
+    transform: rotate(90deg);
+}
 /* projects */
 .projects_container {
     display: grid;
