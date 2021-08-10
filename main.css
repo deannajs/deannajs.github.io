@@ -233,6 +233,7 @@ footer {
 .skills_box {
     background-color: bisque;
     border-radius: 12px;
+    margin-bottom: 50px;
 }
 
 /* projects */
@@ -245,8 +246,15 @@ footer {
 .project_box {
     background-color: bisque;
     border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
+.project_box:hover {
+	opacity: 0.5;
+}
 
 /* gifs */
 
