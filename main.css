@@ -259,7 +259,6 @@ footer {
     width: 300px;
     height: 300px;
     margin-bottom: 50px;
-    /* text-align: center; */
 }
 
 .project_box:hover {
@@ -274,6 +273,10 @@ footer {
 .project_title {
     text-align: center;
     font-weight: bold;
+}
+
+.project_subtitle {
+    text-align: center;
 }
 
 .project_description {
