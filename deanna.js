@@ -126,7 +126,7 @@ function backspace(strings, curStringIdx, curStrPos){
 
 }
 
-function expandSkillsBox(this) {
-  console.log(this.parentNode);
+function expandSkillsBox(element) {
+  console.log(element.parentNode);
 }
 
