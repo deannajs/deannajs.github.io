@@ -270,6 +270,11 @@ footer {
 .skills_smaller_box {
     background-color: #fff4e6;
     border-radius: 12px;
+    height: 100px;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .skills_left_button {
