@@ -223,6 +223,17 @@ footer {
     text-align: center;
 }
 
+/* projects */
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* .project_box {
+
+} */
+
+
 /* gifs */
 
 .banner_gifs {
