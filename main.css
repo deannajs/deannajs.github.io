@@ -263,8 +263,9 @@ footer {
 /* skills smaller */
 .skills_smaller_container {
     display: grid;
-    grid-row: 1;
     justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 .skills_smaller_box {
