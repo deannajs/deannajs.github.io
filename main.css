@@ -258,7 +258,7 @@ footer {
 }
 
 .project_link{
-    all: unset;
+    text-decoration: none;
 }
 /* gifs */
 
