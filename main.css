@@ -263,7 +263,7 @@ footer {
 .skills_smaller_container {
     display: grid;
     grid-row: 1;
-    display: flex;
+    justify-items: center;
 }
 
 .skills_smaller_box {
