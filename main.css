@@ -232,6 +232,7 @@ footer {
 
 .skills_box {
     background-color: bisque;
+    height: 100px;
     border-radius: 12px;
     margin-bottom: 50px;
 }
