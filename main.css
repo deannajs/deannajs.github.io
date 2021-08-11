@@ -119,9 +119,24 @@ nav a:hover {
     font-family: "Oswald";
     height: 100vh;
     position: relative;
+    
+    /* animation */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 #scroll_button {
     display: inline-block;
