@@ -255,6 +255,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     color: black;
+    margin-bottom: 20px;
 }
 
 .skills_expand_button:hover {
