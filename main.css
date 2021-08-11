@@ -261,14 +261,19 @@ footer {
 }
 /* skills smaller */
 .skills_smaller_container {
-    display: grid;
     grid-row: 1;
     justify-items: center;
+    display: none;
 }
 
 .skills_smaller_box {
     background-color: #fff4e6;
     border-radius: 12px;
+    height: 70px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .skills_left_button {

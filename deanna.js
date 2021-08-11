@@ -126,8 +126,18 @@ function backspace(strings, curStringIdx, curStrPos){
 
 }
 
-function expandSkillsBox(this) {
-  console.log(this.className);
-  console.log(this.parentElement.className);
+var coll = document.getElementsByClassName("skills_expand_button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "grid") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "grid";
+    }
+  });
 }
 
