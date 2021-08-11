@@ -124,7 +124,6 @@ nav a:hover {
     animation: fadeInAnimation ease 6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 15s;
 }
 #name { font-size: 1000%;}
 #subname { font-size: 200%;}
