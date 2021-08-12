@@ -149,18 +149,9 @@ function backspace(strings, curStringIdx, curStrPos){
 
 }
 
-
-
 function expandSkillsBox(buttonIdx) {
   var button = document.getElementsByClassName("skills_expand_button")[buttonIdx];
   var content = button.nextElementSibling;
-  // if (content.style.display === "grid") {
-  //   content.style.display = "none";
-  //   button.innerHTML = "+"
-  // } else {
-  //   content.style.display = "grid";
-  //   button.innerHTML = "-"
-  // }
   if (content.style.maxHeight){
     content.style.maxHeight = null;
     button.innerHTML = "+";
@@ -168,6 +159,21 @@ function expandSkillsBox(buttonIdx) {
     content.style.maxHeight = content.scrollHeight + "px";
     button.innerHTML = "-";
   } 
+
+}
+
+
+function prevCarousel(idx) {
+  var slides = document.getElementsByClassName("skills_smaller_container")[idx];
+  var skills = slides.querySelectorAll('.skills_smaller_box');
+  console.log(skills);
+}
+
+function nextCarousel(idx) {
+  var slides = document.getElementsByClassName("skills_smaller_container")[idx];
+}
+
+function showSlides() {
 
 }
 
