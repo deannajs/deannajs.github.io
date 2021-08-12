@@ -264,9 +264,9 @@ nav a:hover {
     float: left;
     margin-left: 16%;
 
-    animation: fadeInLeft ease 6s;
+    /* animation: fadeInLeft ease 6s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 .flower_divider {
