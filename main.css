@@ -365,6 +365,16 @@ footer {
     margin-bottom: 20px;
 }
 
+.skills_smaller_title {
+    font-weight: bold;
+    text-align: left;
+}
+
+.skills_smaller_description {
+    font-size: 50%;
+    text-align: left;
+}
+
 .skills_left_button {
     transform: rotate(90deg);
     width: 50px;
