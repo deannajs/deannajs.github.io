@@ -111,6 +111,14 @@ nav a:hover {
     color: darkgrey;
 }
 
+/* scroll to top button */
+.scroll_to_top_button {
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
 /* name banner */
 .banner{
     text-align: center;
