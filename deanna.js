@@ -15,7 +15,7 @@ window.onload = function() {
 window.onscroll = function() {
   updateScrollProgress();
   updateNavbarColor();
-  fadeIn();
+  // fadeIn();
 }
 
 function fadeIn() {
