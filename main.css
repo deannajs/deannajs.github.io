@@ -126,9 +126,10 @@ nav a:hover {
     text-align: center;
 }
 
-.scroll_to_top_button:hover {
+#scroll_to_top_button:hover {
     color: darkgray;
 }
+
 /* name banner */
 .banner{
     text-align: center;
