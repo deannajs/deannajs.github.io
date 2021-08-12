@@ -112,14 +112,12 @@ nav a:hover {
 }
 
 /* scroll to top button */
-.scroll_to_top_div {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-.scroll_to_top_button {
+#scroll_to_top_button {
     transform: rotate(180deg);
     color: black;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
 }
 
 .scroll_to_top_button:hover {
