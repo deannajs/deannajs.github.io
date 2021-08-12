@@ -154,17 +154,19 @@ function backspace(strings, curStringIdx, curStrPos){
 function expandSkillsBox(buttonIdx) {
   var button = document.getElementsByClassName("skills_expand_button")[buttonIdx];
   var content = button.nextElementSibling;
-  if (content.style.display === "grid") {
-    content.style.display = "none";
-    button.innerHTML = "+"
-  } else {
-    content.style.display = "grid";
-    button.innerHTML = "-"
-  }
+  // if (content.style.display === "grid") {
+  //   content.style.display = "none";
+  //   button.innerHTML = "+"
+  // } else {
+  //   content.style.display = "grid";
+  //   button.innerHTML = "-"
+  // }
   if (content.style.maxHeight){
     content.style.maxHeight = null;
+    button.innerHTML = "+";
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
+    button.innerHTML = "-";
   } 
 
 }
