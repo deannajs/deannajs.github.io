@@ -151,17 +151,13 @@ function backspace(strings, curStringIdx, curStrPos){
 
 
 
-function expandSkillsBox(this) {
-  console.log(this);
-  var coll = document.getElementsByClassName("skills_expand_button");
-  
-  for (var i = 0; i < coll.length; i++) {
-    var content = coll[i].nextElementSibling;
-    if (content.style.display === "grid") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "grid";
-    }
+function expandSkillsBox(buttonIdx) {
+  var button = document.getElementsByClassName("skills_expand_button")[buttonIdx];
+  var content = button.nextElementSibling;
+  if (content.style.display === "grid") {
+    content.style.display = "none";
+  } else {
+    content.style.display = "grid";
   }
 }
 
