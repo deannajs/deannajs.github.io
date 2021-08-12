@@ -15,20 +15,20 @@ window.onload = function() {
 window.onscroll = function() {
   updateScrollProgress();
   updateNavbarColor();
-  fadeIn();
+  // fadeIn();
 }
 
-function fadeIn() {
-  var profilepic = document.getElementById("profilepic");
+// function fadeIn() {
+//   var profilepic = document.getElementById("profilepic");
 
-  var bottom_of_object = profilepic.position().top + profilepic.outerHeight();
-  var bottom_of_window = window.scrollTop() + window.height();
+//   var bottom_of_object = profilepic.position().top + profilepic.outerHeight();
+//   var bottom_of_window = window.scrollTop() + window.height();
 
-  /* If the object is completely visible in the window, fade it it */
-  if (bottom_of_window > bottom_of_object) {
-    profilepic.classList.add('anim');
-  }
-}
+//   /* If the object is completely visible in the window, fade it it */
+//   if (bottom_of_window > bottom_of_object) {
+//     profilepic.classList.add('anim');
+//   }
+// }
 
 function isInViewport(elem) {
   var bounding = elem.getBoundingClientRect();
@@ -156,10 +156,10 @@ function expandSkillsBox(buttonIdx) {
   var content = button.nextElementSibling;
   if (content.style.display === "grid") {
     content.style.display = "none";
-    button.style.transform = "";
+    button.innerHTML = "+"
   } else {
     content.style.display = "grid";
-    button.style.transform = "rotate(180deg)";
+    button.innerHTML = "-"
   }
   if (content.style.maxHeight){
     content.style.maxHeight = null;
