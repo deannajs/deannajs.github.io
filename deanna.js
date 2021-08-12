@@ -156,8 +156,10 @@ function expandSkillsBox(buttonIdx) {
   var content = button.nextElementSibling;
   if (content.style.display === "grid") {
     content.style.display = "none";
+    button.style.transform = "";
   } else {
     content.style.display = "grid";
+    button.style.transform = "rotate(180deg)";
   }
   if (content.style.maxHeight){
     content.style.maxHeight = null;
@@ -165,6 +167,5 @@ function expandSkillsBox(buttonIdx) {
     content.style.maxHeight = content.scrollHeight + "px";
   } 
 
-  button.style.transform = "rotate(180deg)";
 }
 
