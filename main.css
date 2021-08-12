@@ -333,6 +333,9 @@ footer {
     margin-right: auto;
     color: black;
     margin-bottom: 20px;
+    font-size: 120%;
+    font-weight: 100;
+    font-family: Oswald;
 }
 
 .skills_expand_button:hover {
