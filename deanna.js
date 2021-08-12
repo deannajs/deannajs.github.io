@@ -18,21 +18,17 @@ window.onscroll = function() {
   fadeIn();
 }
 
-// function fadeIn() {
-//   var profilepic = document.getElementById("profilepic");
+function fadeIn() {
+  var profilepic = document.getElementById("profilepic");
 
-//   var bottom_of_object = profilepic.position().top + profilepic.outerHeight();
-//   var bottom_of_window = window.scrollTop() + window.height();
+  var bottom_of_object = profilepic.position().top + profilepic.outerHeight();
+  var bottom_of_window = window.scrollTop() + window.height();
 
-//   /* If the object is completely visible in the window, fade it it */
-//   if (bottom_of_window > bottom_of_object) {
-
-//       profilepic.animate({
-//           'opacity': '1'
-//       }, 500);
-
-//   }
-// }
+  /* If the object is completely visible in the window, fade it it */
+  if (bottom_of_window > bottom_of_object) {
+    profilepic.classList.add('anim');
+  }
+}
 
 function isInViewport(elem) {
   var bounding = elem.getBoundingClientRect();
