@@ -345,6 +345,10 @@ footer {
     display: none;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .skills_smaller_box {
