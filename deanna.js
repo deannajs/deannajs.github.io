@@ -15,7 +15,7 @@ window.onload = function() {
 window.onscroll = function() {
   updateScrollProgress();
   updateNavbarColor();
-  // fadeIn();
+  fadeIn();
 }
 
 // function fadeIn() {
@@ -33,6 +33,16 @@ window.onscroll = function() {
 
 //   }
 // }
+
+function isInViewport(elem) {
+  var bounding = elem.getBoundingClientRect();
+  return (
+      bounding.top >= 0 &&
+      bounding.left >= 0 &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 
 function updateScrollProgress() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -145,9 +155,9 @@ function backspace(strings, curStringIdx, curStrPos){
 
 
 
-function expandSkillsBox() {
+function expandSkillsBox(this) {
+  console.log(this);
   var coll = document.getElementsByClassName("skills_expand_button");
-  var i;
   
   for (var i = 0; i < coll.length; i++) {
     var content = coll[i].nextElementSibling;
