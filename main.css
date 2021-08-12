@@ -112,11 +112,13 @@ nav a:hover {
 }
 
 /* scroll to top button */
-.scroll_to_top_button {
-    transform: rotate(180deg);
+.scroll_to_top_div {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+.scroll_to_top_button {
+    transform: rotate(180deg);
     color: black;
 }
 
