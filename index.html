@@ -61,22 +61,22 @@
 
     <div class="section">
         <span class="section_header" id="about me">hi there!<br><br> </span>
-
-        <div>
-        My name is Deanna and I graduated from the University of Michigan with a BSE in Computer Science and a minor in Music.
-        I love creating, and am interested in making user-focused products. 
-        <br><br>
-        I also like <span id="typing"></span>|
-        </div>
-        
-        <div id = "mini-footer">
-        <br>
-        Have a 'lil peek at my
-        <a href="https://drive.google.com/file/d/1ZkSacozAPlv7f8XZGjBOE6U5PAUNyjGh/view?usp=sharing" target="_blank" id="resume_link">
-            <button type="button" id="resume_button">resumé</button>
-        </a> !
-        </div>
-        <br><br>
+        <span class="section_content">
+            <div>
+            My name is Deanna and I graduated from the University of Michigan with a BSE in Computer Science and a minor in Music.
+            I love creating, and am interested in making user-focused products. 
+            <br><br>
+            I also like <span id="typing"></span>|
+            </div>
+            
+            <div id = "mini-footer">
+            <br>
+            Have a 'lil peek at my
+            <a href="https://drive.google.com/file/d/1ZkSacozAPlv7f8XZGjBOE6U5PAUNyjGh/view?usp=sharing" target="_blank" id="resume_link">
+                <button type="button" id="resume_button">resumé</button>
+            </a> !
+            </div>
+        </span>
     </div>
     
     <!-- clear the float to prevent cascading images -->
@@ -89,94 +89,96 @@
 
     <div class="section">
         <span class="section_header" id="skills">skills<br><br> </span>
-        <div class="skills_container">
-            <div class="skills_box">
-                <p class="skills_title">programming languages</p>
-                <p class="skills_list">c/c++/c#, python, MATLAB, HTML/CSS, Verilog, Javascript, Swift</p>
+        <span class="section_content">
+            <div class="skills_container">
+                <div class="skills_box">
+                    <p class="skills_title">programming languages</p>
+                    <p class="skills_list">c/c++/c#, python, MATLAB, HTML/CSS, Verilog, Javascript, Swift</p>
 
-                <button class="skills_expand_button" onclick="expandSkillsBox(this)">╲╱</button>
-                <div class="skills_smaller_container">
-                    <button class="skills_left_button" onclick="">╲╱</button>
-                    <div class="skills_smaller_box">
-                        <p class="skills_smaller_title">c/c++/c#</p>
-                        <p class="skills_smaller_description">
-                            <!-- the primary language i learned coding on. -->
-                        </p>
+                    <button class="skills_expand_button" onclick="expandSkillsBox(this)">╲╱</button>
+                    <div class="skills_smaller_container">
+                        <button class="skills_left_button" onclick="">╲╱</button>
+                        <div class="skills_smaller_box">
+                            <p class="skills_smaller_title">c/c++/c#</p>
+                            <p class="skills_smaller_description">
+                                <!-- the primary language i learned coding on. -->
+                            </p>
 
+                        </div>
+
+                        <div class="skills_smaller_box">
+                            python
+                        </div>
+
+                        <div class="skills_smaller_box">
+                            MATLAB
+                        </div>
+                        <button class="skills_right_button" onclick="">╲╱</button>
                     </div>
+                </div> 
 
-                    <div class="skills_smaller_box">
-                        python
-                    </div>
 
-                    <div class="skills_smaller_box">
-                        MATLAB
+                <div class="skills_box">
+                    <p class="skills_title">software</p>
+                    <p class="skills_list">Unity, Solidworks</p>
+
+
+                    <button class="skills_expand_button" onclick="expandSkillsBox()">╲╱</button>
+                    <div class="skills_smaller_container">
+                        <button class="skills_left_button" onclick="">╲╱</button>
+                        <div class="skills_smaller_box">
+                            <p class="skills_smaller_title">Unity</p>
+                            <p class="skills_smaller_description">
+                                
+                            </p>
+                        </div>
+
+                        <div class="skills_smaller_box">
+                            <p class="skills_smaller_title">Solidworks</p>
+                            <p class="skills_smaller_description">
+
+                            </p>
+                        </div>
+
+                        <button class="skills_right_button" onclick="">╲╱</button>
                     </div>
-                    <button class="skills_right_button" onclick="">╲╱</button>
                 </div>
-            </div> 
 
 
-            <div class="skills_box">
-                <p class="skills_title">software</p>
-                <p class="skills_list">Unity, Solidworks</p>
+                <div class="skills_box">
+                    <p class="skills_title">foreign languages</p>
+                    <p class="skills_list">mandarin chinese, french, japanese</p>
 
+                    <button class="skills_expand_button" onclick="expandSkillsBox()">╲╱</button>
+                    <div class="skills_smaller_container">
+                        <button class="skills_left_button" onclick="">╲╱</button>
+                        <div class="skills_smaller_box">
+                            <p class="skills_smaller_title">mandarin chinese</p>
+                            <p class="skills_smaller_description">
+                                
+                            </p>
+                        </div>
 
-                <button class="skills_expand_button" onclick="expandSkillsBox()">╲╱</button>
-                <div class="skills_smaller_container">
-                    <button class="skills_left_button" onclick="">╲╱</button>
-                    <div class="skills_smaller_box">
-                        <p class="skills_smaller_title">Unity</p>
-                        <p class="skills_smaller_description">
-                            
-                        </p>
+                        <div class="skills_smaller_box">
+                            <p class="skills_smaller_title">french</p>
+                            <p class="skills_smaller_description">
+
+                            </p>
+                        </div>
+
+                        <div class="skills_smaller_box">
+                            <p class="skills_smaller_title">japanese</p>
+                            <p class="skills_smaller_description">
+
+                            </p>
+                        </div>
+
+                        <button class="skills_right_button" onclick="">╲╱</button>
                     </div>
-
-                    <div class="skills_smaller_box">
-                        <p class="skills_smaller_title">Solidworks</p>
-                        <p class="skills_smaller_description">
-
-                        </p>
-                    </div>
-
-                    <button class="skills_right_button" onclick="">╲╱</button>
                 </div>
+
             </div>
-
-
-            <div class="skills_box">
-                <p class="skills_title">foreign languages</p>
-                <p class="skills_list">mandarin chinese, french, japanese</p>
-
-                <button class="skills_expand_button" onclick="expandSkillsBox()">╲╱</button>
-                <div class="skills_smaller_container">
-                    <button class="skills_left_button" onclick="">╲╱</button>
-                    <div class="skills_smaller_box">
-                        <p class="skills_smaller_title">mandarin chinese</p>
-                        <p class="skills_smaller_description">
-                            
-                        </p>
-                    </div>
-
-                    <div class="skills_smaller_box">
-                        <p class="skills_smaller_title">french</p>
-                        <p class="skills_smaller_description">
-
-                        </p>
-                    </div>
-
-                    <div class="skills_smaller_box">
-                        <p class="skills_smaller_title">japanese</p>
-                        <p class="skills_smaller_description">
-
-                        </p>
-                    </div>
-
-                    <button class="skills_right_button" onclick="">╲╱</button>
-                </div>
-            </div>
-
-        </div>
+        </span>
     </div>
 
     <div class="flower_divider">
@@ -189,120 +191,124 @@
     <br style="clear:both" />
     <div class="section">
         <span class="section_header" id="projects">projects <br><br> </span>
-        <div class="projects_container">
+        <span class="section_content">
+            <div class="projects_container">
 
-            <a href="http://www-personal.umich.edu/~deannajs/" target="_blank" class="project_link">
-            <div class="project_box">
-                <p class="project_title">Video Game Portfolio Website</p>
-                <p class="project_subtitle">
-                    2020 – present <br>
-                    HTML/CSS, Javascript <br>
-                </p>
-                <p class="project_description">
-                    the site that hosts the games i've made! (in progress!)
-                </p>
-            </div>
-            </a>
+                <a href="http://www-personal.umich.edu/~deannajs/" target="_blank" class="project_link">
+                <div class="project_box">
+                    <p class="project_title">Video Game Portfolio Website</p>
+                    <p class="project_subtitle">
+                        2020 – present <br>
+                        HTML/CSS, Javascript <br>
+                    </p>
+                    <p class="project_description">
+                        the site that hosts the games i've made! (in progress!)
+                    </p>
+                </div>
+                </a>
+                    
+                <div class="project_box">
+                    <p class="project_title">Personal Website</p>
+                    <p class="project_subtitle">
+                        2020 – present <br>
+                        HTML/CSS, Javascript 
+                    </p>
+                    <p class="project_description">
+                        this thing right here. (in progress!)
+                    </p>
+                </div>
+
+                <a href="https://wackywombats.itch.io/ghost-hosts" target="_blank" class="project_link">
+                <div class="project_box">
+                    <p class="project_title">Ghost Hosts</p>
+                    <p class="project_subtitle">
+                        mar - apr 2020 <br>
+                        C# + Unity<br>
+                    </p>
+                    <p class="project_description">
+                        escape haunted house 
+                    </p>
+                </div>
+                </a>
                 
-            <div class="project_box">
-                <p class="project_title">Personal Website</p>
-                <p class="project_subtitle">
-                    2020 – present <br>
-                    HTML/CSS, Javascript 
-                </p>
-                <p class="project_description">
-                    this thing right here. (in progress!)
-                </p>
-            </div>
 
-            <a href="https://wackywombats.itch.io/ghost-hosts" target="_blank" class="project_link">
-            <div class="project_box">
-                <p class="project_title">Ghost Hosts</p>
-                <p class="project_subtitle">
-                    mar - apr 2020 <br>
-                    C# + Unity<br>
-                </p>
-                <p class="project_description">
-                    escape haunted house 
-                </p>
-            </div>
-            </a>
-            
+                <a href="http://www-personal.umich.edu/~deannajs/sushi_web/" target="_blank" class="project_link">
+                <div class="project_box">
+                    <p class="project_title">Conveyor Cat</p>
+                    <p class="project_subtitle">
+                        feb 2020 <br>
+                        C# + Unity<br>
+                    </p>
+                    <p class="project_description">
+                        feed the cats sushi 
+                    </p>
+                </div>
+                </a>
 
-            <a href="http://www-personal.umich.edu/~deannajs/sushi_web/" target="_blank" class="project_link">
-            <div class="project_box">
-                <p class="project_title">Conveyor Cat</p>
-                <p class="project_subtitle">
-                    feb 2020 <br>
-                    C# + Unity<br>
-                </p>
-                <p class="project_description">
-                    feed the cats sushi 
-                </p>
-            </div>
-            </a>
+                <a href="http://www-personal.umich.edu/~deannajs/zelda_web/" target="_blank" class="project_link">
+                <div class="project_box">
+                    <p class="project_title">Legend of Zelda </p>
+                    <p class="project_subtitle">
+                        jan 2020 <br>
+                        C# + Unity <br>
+                    </p>
+                    <p class="project_description">
+                        a recreation of the original NES legend of zelda game
+                    </p>
+                </div>
+                </a>
+                
+                <a href="https://devpost.com/software/ezscan-cxkbq6" target="_blank" class="project_link">
+                <div class="project_box">
+                    <p class="project_title">EZscan </p>
+                    <p class="project_subtitle">
+                        jun 2019 <br>
+                        swift <br>
+                    </p>
+                    <p class="project_description">
+                        a mobile app that detects, crops, and stores barcodes from pictures of gift cards into a virtual wallet 
+                    </p>
+                </div>
+                </a>
 
-            <a href="http://www-personal.umich.edu/~deannajs/zelda_web/" target="_blank" class="project_link">
-            <div class="project_box">
-                <p class="project_title">Legend of Zelda </p>
-                <p class="project_subtitle">
-                    jan 2020 <br>
-                    C# + Unity <br>
-                </p>
-                <p class="project_description">
-                    a recreation of the original NES legend of zelda game
-                </p>
-            </div>
-            </a>
-            
-            <a href="https://devpost.com/software/ezscan-cxkbq6" target="_blank" class="project_link">
-            <div class="project_box">
-                <p class="project_title">EZscan </p>
-                <p class="project_subtitle">
-                    jun 2019 <br>
-                    swift <br>
-                </p>
-                <p class="project_description">
-                    a mobile app that detects, crops, and stores barcodes from pictures of gift cards into a virtual wallet 
-                </p>
-            </div>
-            </a>
+                <div class="project_box">
+                    <p class="project_title">movie selector </p>
+                    <p class="project_subtitle">
+                        sep - dec 2019 <br> 
+                        python <br>
+                    </p>
+                    <p class="project_description">
+                        created a machine learning movie selector
+                    </p>
+                </div>
 
-            <div class="project_box">
-                <p class="project_title">movie selector </p>
-                <p class="project_subtitle">
-                    sep - dec 2019 <br> 
-                    python <br>
-                </p>
-                <p class="project_description">
-                    created a machine learning movie selector
-                </p>
-            </div>
+                <div class="project_box">
+                    <p class="project_title">OS library</p>
+                    <p class="project_subtitle">
+                        jan - apr 2019 <br>
+                        C++ <br>
+                    </p>
+                    <p class="project_description">
+                        created a custom thread library
+                    </p>
+                </div>
 
-            <div class="project_box">
-                <p class="project_title">OS library</p>
-                <p class="project_subtitle">
-                    jan - apr 2019 <br>
-                    C++ <br>
+                <div class="project_box">
+                    <p class="project_title">insta485</p>
+                    <p class="project_subtitle">
+                        sep - dec 2018 <br>
+                        HTML/CSS, Javascript/jQuery, SQL, python <br>
+                    </p>
+                    <p class="project_description">
+                        recreated instagram
                 </p>
-                <p class="project_description">
-                    created a custom thread library
-                </p>
-            </div>
+                </div>
 
-            <div class="project_box">
-                <p class="project_title">insta485</p>
-                <p class="project_subtitle">
-                    sep - dec 2018 <br>
-                    HTML/CSS, Javascript/jQuery, SQL, python <br>
-                </p>
-                <p class="project_description">
-                    recreated instagram
-            </p>
             </div>
-
-        </div>
+        </span>
     </div>
+
+
     <div class="flower_divider">
         <img src="assets/flower.gif" id="flower_gif">
         <img src="assets/flower.gif" id="flower_gif">
@@ -311,8 +317,10 @@
 
     <div class="section">
         <span class="section_header" id="contact">contact <br><br> </span>
+        <span class="section_content">
 
         Feel free to send me a message at deannajs@umich.edu!
+        </span>
         
     </div>
 
