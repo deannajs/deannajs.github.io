@@ -119,6 +119,11 @@ nav a:hover {
     bottom: 20px;
     right: 20px;
     z-index: 100;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
 }
 
 .scroll_to_top_button:hover {
