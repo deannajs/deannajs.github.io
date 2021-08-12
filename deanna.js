@@ -164,5 +164,7 @@ function expandSkillsBox(buttonIdx) {
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
   } 
+
+  button.style.transform = "rotate(180deg)";
 }
 
