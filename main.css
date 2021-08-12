@@ -157,6 +157,28 @@ nav a:hover {
     }
 }
 
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }  
+ 
+ @keyframes fadeOutLeft {
+    100% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    0% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
 #scroll_button {
     display: inline-block;
     background: transparent;
@@ -241,6 +263,10 @@ nav a:hover {
     border-radius: 50%; 
     float: left;
     margin-left: 16%;
+
+    animation: fadeInLeft ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .flower_divider {
