@@ -164,18 +164,32 @@ function expandSkillsBox(buttonIdx) {
 
 
 function prevCarousel(idx) {
-  var slides = document.getElementsByClassName("skills_smaller_container")[idx];
+  var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
   // get idx of current slide
   var currSlideIdx;
   for (var i=0;  i < slides.length; i++) {
-    if (slides[i].classList.contains(".current_slide")) {
+    if (slides[i].classList.contains("current_slide")) {
       currSlideIdx = i;
-      console.log('current slide = ', slides[i].classList);
+      console.log('current slide = ', currSlideIdx);
     }
   }
-  var skills = slides.querySelectorAll('.skills_smaller_box');
-  console.log(skills);
+
+  // get idx prev slide
+  var prevSlideIdx = currSlideIdx - 1;
+  if (prevSlideIdx < 0) {
+    prevSlideIdx = slides.length - 1;
+  }
+
+  // remove current slide from current slide
+  // add current slide to prev slide
+  // move the slide....
+  var currSlide = slides[currSlideIdx];
+  var prevSlide = slides[prevSlideIdx];
+
+  currSlide.classList.remove('current_slide');
+  prevSlide.classList.add('current_slide');
+
 
   // get idx of current slide
   // var currSlide = slides.querySelector('.current_slide');
