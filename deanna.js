@@ -175,17 +175,17 @@ function initCarousel() {
 
     // hide every other one
     for (var j = 0; j < slides.length; j++) {
-      if (nextSlideIdxs.includes(i)) {
-        slides[i].style.display = 'grid';
+      if (nextSlideIdxs.includes(j)) {
+        slides[j].style.display = 'grid';
       }
       else {
-        slides[i].style.display = 'none';
+        slides[j].style.display = 'none';
       }
     }
 
     // assign grid-column positions
-    for (var i=0; i < nextSlideIdxs.length; i++) {
-      slides[nextSlideIdxs[i]].style.gridColumn = i + 2; // starts at 1, and first column is left arrow
+    for (var j=0; j < nextSlideIdxs.length; j++) {
+      slides[nextSlideIdxs[j]].style.gridColumn = j + 2; // starts at 1, and first column is left arrow
     }
   }
   
