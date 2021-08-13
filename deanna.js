@@ -237,50 +237,58 @@ function rightCarousel(idx) {
   showSlides(slides, nextSlideIdxs);
 }
 
+// function leftCarousel(idx) {
+//   var num_visible = 3;
+//   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
+
+//   // get idx of current slides
+//   var currFirstSlideIdx;
+//   for (var i=0;  i < slides.length; i++) {
+//     if (slides[i].classList.contains("current_slide")) {
+//       currFirstSlideIdx = i;
+//     }
+//   }
+
+//   // get list of curr slides showign
+//   var currSlideIdxs = [];
+//   for (var i = 0; i < num_visible; i++) {
+//     currSlideIdxs.push(mod(currFirstSlideIdx + i, slides.length));
+//   }
+
+//   // get list of next slides to show
+//   var nextSlideIdxs = [];
+//   for (var i = 0; i < currSlideIdxs.length; i++) {
+//     nextSlideIdxs.push(mod(currSlideIdxs[i] - 1, slides.length));
+//   }
+
+//   // remove current slide from current slide
+//   // add current slide to next slide
+//   // move the slide....
+//   var currSlide = slides[currFirstSlideIdx];
+//   var nextSlide = slides[mod(currFirstSlideIdx - 1, slides.length)];
+
+//   currSlide.classList.remove('current_slide');
+//   nextSlide.classList.add('current_slide');
+
+//   // transition
+//   // find out amount to move
+//   var amountToMove = slides[0].getBoundingClientRect.width;
+//   console.log(amountToMove);
+//   // transform each current one
+//   for (var i = 0; i < currSlideIdxs.length; i++) {
+//     slides[currSlideIdxs[i]].style.transform = 'translateX(' + amountToMove + ')';
+//   }
+
+//   // show slides
+//   showSlides(slides, nextSlideIdxs);
+// }
+
 function leftCarousel(idx) {
-  var num_visible = 3;
-  var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
+  var carousel = document.getElementsByClassName('carousel')[idx];
 
-  // get idx of current slides
-  var currFirstSlideIdx;
-  for (var i=0;  i < slides.length; i++) {
-    if (slides[i].classList.contains("current_slide")) {
-      currFirstSlideIdx = i;
-    }
-  }
-
-  // get list of curr slides showign
-  var currSlideIdxs = [];
-  for (var i = 0; i < num_visible; i++) {
-    currSlideIdxs.push(mod(currFirstSlideIdx + i, slides.length));
-  }
-
-  // get list of next slides to show
-  var nextSlideIdxs = [];
-  for (var i = 0; i < currSlideIdxs.length; i++) {
-    nextSlideIdxs.push(mod(currSlideIdxs[i] - 1, slides.length));
-  }
-
-  // remove current slide from current slide
-  // add current slide to next slide
-  // move the slide....
-  var currSlide = slides[currFirstSlideIdx];
-  var nextSlide = slides[mod(currFirstSlideIdx - 1, slides.length)];
-
-  currSlide.classList.remove('current_slide');
-  nextSlide.classList.add('current_slide');
-
-  // transition
-  // find out amount to move
-  var amountToMove = slides[0].getBoundingClientRect.width;
-  console.log(amountToMove);
-  // transform each current one
-  for (var i = 0; i < currSlideIdxs.length; i++) {
-    slides[currSlideIdxs[i]].style.transform = 'translateX(' + amountToMove + ')';
-  }
-
-  // show slides
-  showSlides(slides, nextSlideIdxs);
+  // transform
+  carousel.style.transform = 'translateX(-400px)';
+  
 }
 
 function mod(n, m) {
