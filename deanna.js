@@ -9,7 +9,7 @@ window.onload = function() {
   var navbar = document.getElementById('navbar');
   navbar.style.backgroundSize = "100% " + height + "px";
 
-  initCarousel();
+  // initCarousel();
 }
 
 window.onscroll = function() {
