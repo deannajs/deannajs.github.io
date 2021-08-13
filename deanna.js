@@ -176,24 +176,30 @@ function prevCarousel(idx) {
   }
 
   // get idx prev slide
-  var prevSlideIdx = currSlideIdx - 1;
-  if (prevSlideIdx < 0) {
-    prevSlideIdx = slides.length - 1;
+  var nextSlideIdx = currSlideIdx + 1;
+  if (nextSlideIdx > slides.length - 1) {
+    nextSlideIdx = 0;
   }
 
   // remove current slide from current slide
   // add current slide to prev slide
   // move the slide....
   var currSlide = slides[currSlideIdx];
-  var prevSlide = slides[prevSlideIdx];
+  var nextSlide = slides[nextSlideIdx];
 
   currSlide.classList.remove('current_slide');
-  prevSlide.classList.add('current_slide');
+  nextSlide.classList.add('current_slide');
 
+  // hide every other one
+  for (var i =0; i < slides.length; i++) {
+    if (i != nextSlideIdx) {
+      slides[i].style.visibility = 'hidden';
+    }
+    else {
+      slides[i].style.visibility = 'visible';
+    }
+  }
 
-  // get idx of current slide
-  // var currSlide = slides.querySelector('.current_slide');
-  // if idx is at beginning, then show the last one
 
 }
 
