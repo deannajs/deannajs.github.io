@@ -192,7 +192,7 @@ function initCarousel() {
 }
 
 
-function leftCarousel(idx) {
+function rightCarousel(idx) {
   var num_visible = 3;
   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
@@ -229,15 +229,15 @@ function leftCarousel(idx) {
   // find out amount to move
   var amountToMove = slides[0].getBoundingClientRect.width;
   // transform each current one
-  for (var i = 0; i < currSlideIdxs.length; i++) {
-    slides[currSlideIdxs[i]].style.transform = 'translateX(-' + amountToMove + ')';
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.transform = 'translateX(-' + amountToMove + ')';
   }
 
   // show slides
   showSlides(slides, nextSlideIdxs);
 }
 
-function rightCarousel(idx) {
+function leftCarousel(idx) {
   var num_visible = 3;
   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
