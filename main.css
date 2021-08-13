@@ -385,6 +385,7 @@ footer {
     outline: none;
     text-align: center;
     color: black;
+    grid-row: 1;
 }
 
 .skills_left_button:hover {
@@ -401,6 +402,7 @@ footer {
     border: none;
     outline: none;
     text-align: center;
+    grid-row: 1;
 }
 
 .skills_right_button:hover {
