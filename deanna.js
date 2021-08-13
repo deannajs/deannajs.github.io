@@ -193,10 +193,10 @@ function prevCarousel(idx) {
   // hide every other one
   for (var i =0; i < slides.length; i++) {
     if (nextSlideIdxs.includes(i)) {
-      slides[i].style.visibility = 'visible';
+      slides[i].style.display = 'visible';
     }
     else {
-      slides[i].style.visibility = 'hidden';
+      slides[i].style.display = 'none';
     }
   }
 
