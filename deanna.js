@@ -204,16 +204,19 @@ function leftCarousel(idx) {
     }
   }
 
-  // get list of next slides to show
-  var nextSlideIdxs = [];
-  for (var i = 0; i < num_visible; i++) {
-    nextSlideIdxs.push( mod(currFirstSlideIdx + 1 + i, slides.length));
-  }
-
+  // get list of current slides showing
   var currSlideIdxs = [];
   for (var i = 0; i < num_visible; i++) {
     currSlideIdxs.push(mod(currFirstSlideIdx + i, slides.length));
   }
+
+  // get list of next slides to show
+  var nextSlideIdxs = [];
+  for (var i = 0; i < currSlideIdxs.length; i++) {
+    nextSlideIdxs.push(mod(currSlideIdxs[i] + 1, slides.length));
+  }
+
+
 
   // remove current slide from current slide
   // add current slide to next slide
@@ -232,7 +235,7 @@ function rightCarousel(idx) {
   var num_visible = 3;
   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
-  // get idx of current slide
+  // get idx of current slides
   var currFirstSlideIdx;
   for (var i=0;  i < slides.length; i++) {
     if (slides[i].classList.contains("current_slide")) {
@@ -240,16 +243,19 @@ function rightCarousel(idx) {
     }
   }
 
-  // get list of next slides to show
-  var nextSlideIdxs = [];
-  for (var i = num_visible; i > 0; i--) {
-    nextSlideIdxs.push(mod(currFirstSlideIdx - i, slides.length));
-  }
-
+  // get list of curr slides showign
   var currSlideIdxs = [];
   for (var i = 0; i < num_visible; i++) {
     currSlideIdxs.push(mod(currFirstSlideIdx + i, slides.length));
   }
+
+  // get list of next slides to show
+  var nextSlideIdxs = [];
+  for (var i = 0; i < currSlideIdxs.length; i++) {
+    nextSlideIdxs.push(mod(currSlideIdxs[i] - 1, slides.length));
+  }
+
+
   
   // remove current slide from current slide
   // add current slide to next slide
