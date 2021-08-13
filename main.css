@@ -346,7 +346,7 @@ footer {
     justify-items: center;
     /* grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: relative;
+    /* position: relative; */
     display: grid;
     max-height: 0;
     overflow: hidden;
