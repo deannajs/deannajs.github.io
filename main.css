@@ -361,7 +361,7 @@ footer {
     text-align: center;
     margin-bottom: 20px;
     list-style: none;
-    position: relative;
+    position: absolute;
 }
 
 .skills_smaller_title {
