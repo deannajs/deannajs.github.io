@@ -202,7 +202,7 @@ function prevCarousel(idx) {
 
   // assign grid-column positions
   for (var i=0; i < nextSlideIdxs.length; i++) {
-    slides[nextSlideIdxs[i]].style.gridColumn = i + 1;
+    slides[nextSlideIdxs[i]].style.gridColumn = i + 2; // starts at 1, and first column is left arrow
   }
 }
 
