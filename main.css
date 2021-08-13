@@ -344,8 +344,8 @@ footer {
 /* skills smaller */
 .skills_smaller_container {
     justify-items: center;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -360,8 +360,6 @@ footer {
     margin-right: 20px;
     text-align: center;
     margin-bottom: 20px;
-    list-style: none;
-    position: absolute;
 }
 
 .skills_smaller_title {
