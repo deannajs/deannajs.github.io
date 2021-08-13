@@ -178,18 +178,58 @@ function prevCarousel(idx) {
   // get list of next slides to show
   var nextSlideIdxs = [];
   for (var i = 0; i < num_visible; i++) {
-    nextSlideIdxs.push( (currFirstSlideIdx + 1 + i) % slides.length);
+    nextSlideIdxs.push( mod(currFirstSlideIdx + 1 + i, slides.length));
   }
 
   // remove current slide from current slide
   // add current slide to next slide
   // move the slide....
   var currSlide = slides[currFirstSlideIdx];
-  var nextSlide = slides[(currFirstSlideIdx + 1) % slides.length];
+  var nextSlide = slides[mod(currFirstSlideIdx + 1,slides.length)];
 
   currSlide.classList.remove('current_slide');
   nextSlide.classList.add('current_slide');
 
+  // show slides
+  showSlides(slides, nextSlideIdxs);
+}
+
+function nextCarousel(idx) {
+  var num_visible = 3;
+  var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
+
+  // get idx of current slide
+  var currFirstSlideIdx;
+  for (var i=0;  i < slides.length; i++) {
+    if (slides[i].classList.contains("current_slide")) {
+      currFirstSlideIdx = i;
+    }
+  }
+
+  // get list of next slides to show
+  var nextSlideIdxs = [];
+  for (var i = 0; i < num_visible; i++) {
+    nextSlideIdxs.push(mod(currFirstSlideIdx - 1 - i, slides.length));
+  }
+
+  // remove current slide from current slide
+  // add current slide to next slide
+  // move the slide....
+  var currSlide = slides[currFirstSlideIdx];
+  var nextSlide = slides[mod(currFirstSlideIdx - 1, slides.length)];
+
+  currSlide.classList.remove('current_slide');
+  nextSlide.classList.add('current_slide');
+
+  // show slides
+  showSlides(slides, nextSlideIdxs);
+}
+
+function mod(n, m) {
+  return ((n % m) + m) % m;
+}
+
+function showSlides(slides, nextSlideIdxs) {
   // hide every other one
   for (var i =0; i < slides.length; i++) {
     if (nextSlideIdxs.includes(i)) {
@@ -204,15 +244,5 @@ function prevCarousel(idx) {
   for (var i=0; i < nextSlideIdxs.length; i++) {
     slides[nextSlideIdxs[i]].style.gridColumn = i + 2; // starts at 1, and first column is left arrow
   }
-}
-
-function nextCarousel(idx) {
-  var slides = document.getElementsByClassName("skills_smaller_container")[idx];
-  var skills = slides.querySelectorAll('.skills_smaller_box');
-  console.log(skills);
-}
-
-function showSlides() {
-
 }
 
