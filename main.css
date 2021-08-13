@@ -343,12 +343,14 @@ footer {
 }
 /* skills smaller */
 
-.skills_smaller_container {
-    justify-items: center;
+.carousel {
+    display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    /* position: relative; */
-    display: grid;
+    justify-items: center;
+}
+.skills_smaller_container {
+    justify-items: center;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -388,7 +390,6 @@ footer {
     outline: none;
     text-align: center;
     color: black;
-    grid-row: 1;
 }
 
 .skills_left_button:hover {
@@ -405,7 +406,6 @@ footer {
     border: none;
     outline: none;
     text-align: center;
-    grid-row: 1;
 }
 
 .skills_right_button:hover {
