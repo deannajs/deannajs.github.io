@@ -164,9 +164,9 @@ function expandSkillsBox(buttonIdx) {
 
 function initCarousel() {
   var num_visible = 3;
-  var nextSlideIdxs = [];
+  var currSlideIdxs = [];
   for (var i = 0; i < num_visible; i++) {
-    nextSlideIdxs.push(i);
+    currSlideIdxs.push(i);
   }
   var carousels = document.getElementsByClassName("skills_smaller_container");
 
@@ -175,7 +175,7 @@ function initCarousel() {
 
     // hide every other one
     for (var j = 0; j < slides.length; j++) {
-      if (nextSlideIdxs.includes(j)) {
+      if (currSlideIdxs.includes(j)) {
         slides[j].style.display = 'grid';
       }
       else {
@@ -184,13 +184,11 @@ function initCarousel() {
     }
 
     // assign grid-column positions
-    for (var j=0; j < nextSlideIdxs.length; j++) {
-      slides[nextSlideIdxs[j]].style.gridColumn = j + 2; // starts at 1, and first column is left arrow
+    for (var j=0; j < currSlideIdxs.length; j++) {
+      slides[currSlideIdxs[j]].style.gridColumn = j + 2; // starts at 1, and first column is left arrow
     }
   }
   
-  console.log('hello');
-
 }
 
 
