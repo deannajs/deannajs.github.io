@@ -275,7 +275,13 @@ function mod(n, m) {
 }
 
 function showSlides(slides, currSlideIdxs, nextSlideIdxs) {
+
+  // find out amount to move
+  var amountToMove = slides[0].getBoundingClientRect.width;
   // transform each current one
+  for (var i = 0; i < currSlideIdxs.length; i++) {
+    slides[currSlideIdxs[i]].style.transform = 'translateX(-' + amountToMove + ')';
+  }
 
 
   // hide every other one
