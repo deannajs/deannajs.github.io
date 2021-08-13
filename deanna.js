@@ -164,39 +164,39 @@ function expandSkillsBox(buttonIdx) {
 
 
 function prevCarousel(idx) {
+  var num_visible = 3;
   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
   // get idx of current slide
-  var currSlideIdx;
+  var currFirstSlideIdx;
   for (var i=0;  i < slides.length; i++) {
     if (slides[i].classList.contains("current_slide")) {
-      currSlideIdx = i;
-      console.log('current slide = ', currSlideIdx);
+      currFirstSlideIdx = i;
     }
   }
 
-  // get idx prev slide
-  var nextSlideIdx = currSlideIdx + 1;
-  if (nextSlideIdx > slides.length - 1) {
-    nextSlideIdx = 0;
+  // get list of next slides to show
+  var nextSlideIdxs = [];
+  for (var i = 0; i < num_visible; i++) {
+    nextSlideIdxs.push( (currFirstSlideIdx + 1 + i) % slides.length);
   }
 
   // remove current slide from current slide
-  // add current slide to prev slide
+  // add current slide to next slide
   // move the slide....
-  var currSlide = slides[currSlideIdx];
-  var nextSlide = slides[nextSlideIdx];
+  var currSlide = slides[currFirstSlideIdx];
+  var nextSlide = slides[(currFirstSlideIdx + 1) % slides.length];
 
   currSlide.classList.remove('current_slide');
   nextSlide.classList.add('current_slide');
 
   // hide every other one
   for (var i =0; i < slides.length; i++) {
-    if (i != nextSlideIdx) {
-      slides[i].style.visibility = 'hidden';
+    if (nextSlideIdxs.includes(i)) {
+      slides[i].style.visibility = 'visible';
     }
     else {
-      slides[i].style.visibility = 'visible';
+      slides[i].style.visibility = 'hidden';
     }
   }
 
