@@ -363,6 +363,7 @@ footer {
     text-align: center;
     margin-bottom: 20px;
     grid-row: 1;
+    transition: transform 250ms ease-in;
 }
 
 .skills_smaller_title {
