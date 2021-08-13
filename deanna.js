@@ -263,7 +263,6 @@ function rightCarousel(idx) {
 
 //   // remove current slide from current slide
 //   // add current slide to next slide
-//   // move the slide....
 //   var currSlide = slides[currFirstSlideIdx];
 //   var nextSlide = slides[mod(currFirstSlideIdx - 1, slides.length)];
 
@@ -288,8 +287,25 @@ function leftCarousel(idx) {
 
   var amountToTransform = carousel.getElementsByClassName('skills_smaller_box current_slide')[0].getBoundingClientRect().width;
   console.log(amountToTransform);
+
+  // get idx of current slides
+  var currFirstSlideIdx;
+  for (var i=0;  i < slides.length; i++) {
+    if (slides[i].classList.contains("current_slide")) {
+      currFirstSlideIdx = i;
+    }
+  }
+
+  // remove current slide from current slide
+  // add current slide to next slide
+  var currSlide = slides[currFirstSlideIdx];
+  var nextSlide = slides[mod(currFirstSlideIdx - 1, slides.length)];
+
+  currSlide.classList.remove('current_slide');
+  nextSlide.classList.add('current_slide');
+
   // transform
-  carousel.style.transform = 'translateX(-' + amountToTransform + ')';
+  carousel.style.transform = 'translateX(-' + amountToTransform * currFirstSlideIdx + ')';
 
 }
 
