@@ -9,7 +9,7 @@ window.onload = function() {
   var navbar = document.getElementById('navbar');
   navbar.style.backgroundSize = "100% " + height + "px";
 
-  document.getElementById('scroll_button').marginTop 
+  initCarousel();
 }
 
 window.onscroll = function() {
@@ -162,6 +162,36 @@ function expandSkillsBox(buttonIdx) {
 
 }
 
+function initCarousel() {
+  var num_visible = 3;
+  var nextSlideIdxs = [];
+  for (var i = 0; i < num_visible; i++) {
+    nextSlideIdxs.push(i);
+  }
+  var carousels = document.getElementsByClassName("skills_smaller_container");
+
+  for (var i = 0; i < carousels.length; i++) {
+    var slides = carousels.getElementsByClassName("skills_smaller_box");
+
+    // hide every other one
+    for (var j = 0; j < slides.length; j++) {
+      if (nextSlideIdxs.includes(i)) {
+        slides[i].style.display = 'grid';
+      }
+      else {
+        slides[i].style.display = 'none';
+      }
+    }
+
+    // assign grid-column positions
+    for (var i=0; i < nextSlideIdxs.length; i++) {
+      slides[nextSlideIdxs[i]].style.gridColumn = i + 2; // starts at 1, and first column is left arrow
+    }
+  }
+  
+
+
+}
 
 function leftCarousel(idx) {
   var num_visible = 3;
@@ -181,6 +211,11 @@ function leftCarousel(idx) {
     nextSlideIdxs.push( mod(currFirstSlideIdx + 1 + i, slides.length));
   }
 
+  var currSlideIdxs = [];
+  for (var i = 0; i < num_visible; i++) {
+    currSlideIdxs.push(mod(currFirstSlideIdx + i, slides.length));
+  }
+
   // remove current slide from current slide
   // add current slide to next slide
   // move the slide....
@@ -191,7 +226,7 @@ function leftCarousel(idx) {
   nextSlide.classList.add('current_slide');
 
   // show slides
-  showSlides(slides, nextSlideIdxs);
+  showSlides(slides, currSlideIdxs, nextSlideIdxs);
 }
 
 function rightCarousel(idx) {
@@ -212,6 +247,11 @@ function rightCarousel(idx) {
     nextSlideIdxs.push(mod(currFirstSlideIdx - i, slides.length));
   }
 
+  var currSlideIdxs = [];
+  for (var i = 0; i < num_visible; i++) {
+    currSlideIdxs.push(mod(currFirstSlideIdx + i, slides.length));
+  }
+  
   // remove current slide from current slide
   // add current slide to next slide
   // move the slide....
@@ -229,7 +269,10 @@ function mod(n, m) {
   return ((n % m) + m) % m;
 }
 
-function showSlides(slides, nextSlideIdxs) {
+function showSlides(slides, currSlideIdxs, nextSlideIdxs) {
+  // transform each current one
+
+
   // hide every other one
   for (var i =0; i < slides.length; i++) {
     if (nextSlideIdxs.includes(i)) {
