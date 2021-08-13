@@ -163,7 +163,7 @@ function expandSkillsBox(buttonIdx) {
 }
 
 
-function prevCarousel(idx) {
+function leftCarousel(idx) {
   var num_visible = 3;
   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
@@ -194,7 +194,7 @@ function prevCarousel(idx) {
   showSlides(slides, nextSlideIdxs);
 }
 
-function nextCarousel(idx) {
+function rightCarousel(idx) {
   var num_visible = 3;
   var slides = document.getElementsByClassName("skills_smaller_container")[idx].getElementsByClassName("skills_smaller_box");
 
