@@ -287,7 +287,7 @@ function mod(n, m) {
   return ((n % m) + m) % m;
 }
 
-function showSlides(slides, currSlideIdxs, nextSlideIdxs) {
+function showSlides(slides, nextSlideIdxs) {
   // hide every other one
   for (var i =0; i < slides.length; i++) {
     if (nextSlideIdxs.includes(i)) {
