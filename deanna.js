@@ -199,6 +199,11 @@ function prevCarousel(idx) {
       slides[i].style.display = 'none';
     }
   }
+
+  // assign grid-column positions
+  for (var i=0; i < nextSlideIdxs.length; i++) {
+    slides[nextSlideIdxs[i]].style.gridColumn = i + 1;
+  }
 }
 
 function nextCarousel(idx) {
