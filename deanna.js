@@ -243,6 +243,7 @@ function showSlides(slides, nextSlideIdxs) {
   // assign grid-column positions
   for (var i=0; i < nextSlideIdxs.length; i++) {
     slides[nextSlideIdxs[i]].style.gridColumn = i + 2; // starts at 1, and first column is left arrow
+    console.log('slide ', nextSlideIdxs[i], ' is in col ', i + 2);
   }
 }
 
