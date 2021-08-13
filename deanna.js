@@ -263,7 +263,7 @@ function rightCarousel(idx) {
   nextSlide.classList.add('current_slide');
 
   // show slides
-  showSlides(slides, nextSlideIdxs);
+  showSlides(slides, currSlideIdxs, nextSlideIdxs);
 }
 
 function mod(n, m) {
