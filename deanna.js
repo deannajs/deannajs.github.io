@@ -273,6 +273,7 @@ function rightCarousel(idx) {
   // transition
   // find out amount to move
   var amountToMove = slides[0].getBoundingClientRect.width;
+  console.log(amountToMove);
   // transform each current one
   for (var i = 0; i < currSlideIdxs.length; i++) {
     slides[currSlideIdxs[i]].style.transform = 'translateX(' + amountToMove + ')';
