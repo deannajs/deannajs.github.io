@@ -216,8 +216,6 @@ function leftCarousel(idx) {
     nextSlideIdxs.push(mod(currSlideIdxs[i] + 1, slides.length));
   }
 
-
-
   // remove current slide from current slide
   // add current slide to next slide
   // move the slide....
@@ -227,8 +225,16 @@ function leftCarousel(idx) {
   currSlide.classList.remove('current_slide');
   nextSlide.classList.add('current_slide');
 
+  // transition
+  // find out amount to move
+  var amountToMove = slides[0].getBoundingClientRect.width;
+  // transform each current one
+  for (var i = 0; i < currSlideIdxs.length; i++) {
+    slides[currSlideIdxs[i]].style.transform = 'translateX(-' + amountToMove + ')';
+  }
+
   // show slides
-  showSlides(slides, currSlideIdxs, nextSlideIdxs);
+  showSlides(slides, nextSlideIdxs);
 }
 
 function rightCarousel(idx) {
@@ -255,8 +261,6 @@ function rightCarousel(idx) {
     nextSlideIdxs.push(mod(currSlideIdxs[i] - 1, slides.length));
   }
 
-
-  
   // remove current slide from current slide
   // add current slide to next slide
   // move the slide....
@@ -266,8 +270,16 @@ function rightCarousel(idx) {
   currSlide.classList.remove('current_slide');
   nextSlide.classList.add('current_slide');
 
+  // transition
+  // find out amount to move
+  var amountToMove = slides[0].getBoundingClientRect.width;
+  // transform each current one
+  for (var i = 0; i < currSlideIdxs.length; i++) {
+    slides[currSlideIdxs[i]].style.transform = 'translateX(' + amountToMove + ')';
+  }
+
   // show slides
-  showSlides(slides, currSlideIdxs, nextSlideIdxs);
+  showSlides(slides, nextSlideIdxs);
 }
 
 function mod(n, m) {
@@ -275,15 +287,6 @@ function mod(n, m) {
 }
 
 function showSlides(slides, currSlideIdxs, nextSlideIdxs) {
-
-  // find out amount to move
-  var amountToMove = slides[0].getBoundingClientRect.width;
-  // transform each current one
-  for (var i = 0; i < currSlideIdxs.length; i++) {
-    slides[currSlideIdxs[i]].style.transform = 'translateX(-' + amountToMove + ')';
-  }
-
-
   // hide every other one
   for (var i =0; i < slides.length; i++) {
     if (nextSlideIdxs.includes(i)) {
@@ -292,6 +295,7 @@ function showSlides(slides, currSlideIdxs, nextSlideIdxs) {
     else {
       slides[i].style.display = 'none';
     }
+    slides[i].style.transform = '';
   }
 
   // assign grid-column positions
