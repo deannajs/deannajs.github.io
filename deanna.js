@@ -189,9 +189,10 @@ function initCarousel() {
     }
   }
   
-
+  console.log('hello');
 
 }
+
 
 function leftCarousel(idx) {
   var num_visible = 3;
