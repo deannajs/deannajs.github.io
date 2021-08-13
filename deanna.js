@@ -286,7 +286,7 @@ function rightCarousel(idx) {
 function leftCarousel(idx) {
   var carousel = document.getElementsByClassName('carousel')[idx];
 
-  var amountToTransform = carousel.getElementsByClassName('skills_smaller_box current_slide')[0].getBoundingClientRect.width;
+  var amountToTransform = carousel.getElementsByClassName('skills_smaller_box current_slide')[0].getBoundingClientRect().width;
   console.log(amountToTransform);
   // transform
   carousel.style.transform = 'translateX(-' + amountToTransform + ')';
