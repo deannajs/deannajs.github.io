@@ -165,12 +165,28 @@ function expandSkillsBox(buttonIdx) {
 
 function prevCarousel(idx) {
   var slides = document.getElementsByClassName("skills_smaller_container")[idx];
+
+  // get idx of current slide
+  var currSlideIdx;
+  for (var i=0;  i < slides.length; i++) {
+    if (slides[i].classList.contains(".current_slide")) {
+      currSlideIdx = i;
+      console.log('current slide = ', slides[i].classList);
+    }
+  }
   var skills = slides.querySelectorAll('.skills_smaller_box');
   console.log(skills);
+
+  // get idx of current slide
+  // var currSlide = slides.querySelector('.current_slide');
+  // if idx is at beginning, then show the last one
+
 }
 
 function nextCarousel(idx) {
   var slides = document.getElementsByClassName("skills_smaller_container")[idx];
+  var skills = slides.querySelectorAll('.skills_smaller_box');
+  console.log(skills);
 }
 
 function showSlides() {
