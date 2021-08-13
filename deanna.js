@@ -171,7 +171,7 @@ function initCarousel() {
   var carousels = document.getElementsByClassName("skills_smaller_container");
 
   for (var i = 0; i < carousels.length; i++) {
-    var slides = carousels.getElementsByClassName("skills_smaller_box");
+    var slides = carousels[i].getElementsByClassName("skills_smaller_box");
 
     // hide every other one
     for (var j = 0; j < slides.length; j++) {
