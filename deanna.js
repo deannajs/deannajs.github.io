@@ -193,14 +193,12 @@ function prevCarousel(idx) {
   // hide every other one
   for (var i =0; i < slides.length; i++) {
     if (nextSlideIdxs.includes(i)) {
-      slides[i].style.display = 'visible';
+      slides[i].style.display = 'grid';
     }
     else {
       slides[i].style.display = 'none';
     }
   }
-
-
 }
 
 function nextCarousel(idx) {
