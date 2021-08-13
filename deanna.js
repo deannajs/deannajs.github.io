@@ -286,9 +286,10 @@ function rightCarousel(idx) {
 function leftCarousel(idx) {
   var carousel = document.getElementsByClassName('carousel')[idx];
 
+  var amountToTransform = carousel[0].getBoundingClientRect.width;
   // transform
-  carousel.style.transform = 'translateX(-400px)';
-  
+  carousel.style.transform = 'translateX(-' + amountToTransform + ')';
+
 }
 
 function mod(n, m) {
