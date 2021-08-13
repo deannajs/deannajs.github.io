@@ -208,8 +208,8 @@ function rightCarousel(idx) {
 
   // get list of next slides to show
   var nextSlideIdxs = [];
-  for (var i = 0; i < num_visible; i++) {
-    nextSlideIdxs.push(mod(currFirstSlideIdx - 1 - i, slides.length));
+  for (var i = num_visible; i > 0; i--) {
+    nextSlideIdxs.push(mod(currFirstSlideIdx - i, slides.length));
   }
 
   // remove current slide from current slide
