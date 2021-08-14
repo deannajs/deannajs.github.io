@@ -285,7 +285,8 @@ function rightCarousel(idx) {
 function leftCarousel(idx) {
   var carousel = document.getElementsByClassName('carousel')[idx];
   var slides = carousel.getElementsByClassName('skills_smaller_box');
-  var amountToTransform = carousel.getElementsByClassName('skills_smaller_box current_slide')[0].getBoundingClientRect().left;
+  var slide = carousel.getElementsByClassName('skills_smaller_box');
+  var slideWidth = slide.style.width + slide.style.marginLeft + slide.style.marginRight;
   // console.log(amountToTransform);
 
   // get idx of current slides
@@ -304,6 +305,7 @@ function leftCarousel(idx) {
   currSlide.classList.remove('current_slide');
   nextSlide.classList.add('current_slide');
 
+  var amountToTransform = slideWidth * (currFirstSlideIdx - 1);
   // transform
   carousel.style.transform = 'translateX(-' + amountToTransform  + 'px)';
 
