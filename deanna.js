@@ -287,7 +287,7 @@ function leftCarousel(idx) {
   var slides = carousel.getElementsByClassName('skills_smaller_box');
   var slide = slides[0];
   // var slideWidth = slide.style.width + slide.style.marginLeft + slide.style.marginRight;
-  var slideWidth = 300;
+  var slideWidth = 190;
   // console.log(amountToTransform);
 
   // get idx of current slides
@@ -301,7 +301,7 @@ function leftCarousel(idx) {
   // remove current slide from current slide
   // add current slide to next slide
   var currSlide = slides[currFirstSlideIdx];
-  var nextSlide = slides[mod(currFirstSlideIdx - 1, slides.length)];
+  var nextSlide = slides[mod(currFirstSlideIdx + 1, slides.length)];
 
   currSlide.classList.remove('current_slide');
   nextSlide.classList.add('current_slide');
