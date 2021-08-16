@@ -286,7 +286,8 @@ function leftCarousel(idx) {
   var carousel = document.getElementsByClassName('carousel')[idx];
   var slides = carousel.getElementsByClassName('skills_smaller_box');
   var slide = slides[0];
-  var slideWidth = slide.style.width + slide.style.marginLeft + slide.style.marginRight;
+  // var slideWidth = slide.style.width + slide.style.marginLeft + slide.style.marginRight;
+  var slideWidth = 300;
   // console.log(amountToTransform);
 
   // get idx of current slides
