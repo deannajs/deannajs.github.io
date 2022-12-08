@@ -401,7 +401,7 @@ footer {
     transform: rotate(-90deg);
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: none;
     background: transparent;
     border: none;
     outline: none;
